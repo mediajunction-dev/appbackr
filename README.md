@@ -1,3 +1,3 @@
 appbackr
 ========
-Up to date versions of stylesheet and scripts
+Up-to-date versions of stylesheet and scripts
