@@ -1,0 +1,98 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Tizen Submission Form</title>
+  <meta name="description" content="Tizen Submission Form">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../assets/js/fonts.min.js"></script>
+  <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+  <script src="../../assets/js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+<body class="no-header-footer">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+	<!-- Site Header -->
+		<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12 alignCenter">
+				<h2 class="orange">Tizen Submission Form</h2>			
+				<br>
+				<form class="form-horizontal" id="tizen-api-form-form" action="/tizen/form" method="post">
+			    <fieldset>			
+					<div class="form-group row-fluid">
+						<label class="span3" for="TizenApi_Developer_Email">Developer Email</label>
+						<div class="span9">
+						<input class="form-control span12" name="TizenApi[email]" id="TizenApi_email" type="text" maxlength="255">
+						</div>
+					</div>
+				
+				    <div class="form-group row-fluid">
+				    	<label class="span3" class="labelField" for="tizenUploadForm_platform">Platform</label>
+				    	<div class="span9">
+						<select class="form-control span12" name="tizenUploadForm[platform]" id="platform">
+				            <option value="">Select...</option>
+				            <option value="0">Android</option>
+				            <option value="1">iOS</option>
+				            <option value="2">Tizen</option>
+				        </select>			
+				    	</div>
+				    </div>			
+					<!--
+				    <div class="form-group row-fluid">
+				    	<label for="TizenApi_Platform:">Platform:</label>
+				    	<input name="TizenApi[app_type]" id="TizenApi_app_type" type="text" maxlength="255" />
+				    </div>
+				    -->				
+				    <div class="form-group row-fluid">
+				        <label class="span3" for="TizenApi_App_Name">App Name</label>
+				        <div class="span9">
+				        <input class="form-control span12" name="TizenApi[name]" id="TizenApi_name" type="text" maxlength="255">
+				        <span class="help-block">Optional</span>
+				        </div>
+				    </div>			
+				    <div class="form-group row-fluid">
+				        <label class="span3" for="TizenApi_App_URL">App Url</label>
+				        <div class="span9">
+				        <input class="form-control span12" name="TizenApi[name]" id="TizenApi_name" type="text" maxlength="255">
+				        <span class="help-block">Optional</span>
+				        </div>
+				    </div>			
+				    <div class="form-group row-fluid">
+				        <label class="span3" for="TizenApi_File">File</label>
+				        <div class="span9">				        
+				        <input id="ytTizenApi_file_path" type="hidden" value="" name="TizenApi[file_path]">
+				        <input class="module" name="TizenApi[file_path]" id="TizenApi_file_path" type="file">
+				        </div>
+				    </div>
+					<div class="row-fluid">
+						<div class="span3"></div>
+						<div class="span9">
+						<button class="btn btn-md btn-success" type="submit" name="yt0">Submit</button>
+						<button class="btn btn-md btn-default" type="reset" name="yt1">Reset</button>						
+						</div>
+					</div>					
+			    </fieldset>	
+			<hr>
+			<p>Any questions? Email us at <a href="mailto:tizenhelp@appbackr.com">tizen@appbackr.com</a>.</p>					
+				</form>				
+			</div>
+			
+		</div>
+		
+
+	</div>
+
+<script>
+var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>
