@@ -71,18 +71,28 @@
 					<div class="span3"></div>
 					<div class="span6">
 					
-						<form class="form-centered" id="Chrome2" name="Chrome2" method="POST" action="">
-						<h2><small>STEP 2</small>Enter your email and download our Tizen guide.</h2>
+						<form class="form-centered" id="Chrome3" name="Chrome3" method="POST" action="">
+						<h2><small>STEP 3</small> Enter your app's Tizen Seller Store information</h2>
 						<p>&nbsp;</p>
 						<ul class="steps">
 							<li><span>1</span></li>
-							<li class="active"><span>2</span></li>
-							<li><span>3</span></li>
+							<li><span>2</span></li>
+							<li class="active"><span>3</span></li>
 						</ul>
 						 
-						<input type="text" placeholder="Your email">
+						<label for="textinput">Paypal Email</label>						
+						<input id="textinput" name="email" placeholder="" required type="email"/>
 						
-						<button type="submit" class="btn btn-primary btn-lg" name="Chrome2">Download</button>
+						<label for="textinput">App ID/URL</label>
+						<input id="textinput" name="appid" placeholder="Android or Apple App ID or URL" required type="text"/>
+
+						<label for="textinput">Developer DeepLink</label>
+						<input id="textinput" name="deeplink" placeholder="" required type="text"/>
+
+						<label for="textinput">App Content ID</label>
+						<input id="textinput" name="contentid" placeholder="" required type="text"/>
+						
+						<button type="submit" class="btn btn-primary btn-lg" name="Chrome3">Enter</button>
 						
 						</form>
 						
