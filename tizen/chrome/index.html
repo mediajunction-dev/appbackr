@@ -41,7 +41,7 @@
 								</li>
 								<li>
 								<strong>READY FOR TIZEN?</strong>								
-								<a href="#step2">Download our guide</a> and get your app in the Tizen Seller Store.
+								<a href="http://tools.appbackr.com/porting-html5-apps-tizen-guide/" target="_blank">Download our guide</a> and get your app in the Tizen Seller Store.
 								</li>
 								<li>
 								<strong>DONE? LET US KNOW.</strong>
@@ -95,7 +95,10 @@
 					<div class="span6">
 						
 						<form class="form-centered" id="Chrome2" name="Chrome2" method="POST" action="">
-						<h2><small>STEP 2</small>Enter your email and download our Tizen guide.</h2>
+						<h2><small>STEP 2</small>Upload your app</h2>
+						<p>
+						 appbackr will repackage the app as a Tizen file and return to you. Then add the app to the Tizen Seller Store with "appbackr" in the Comments field to earn your cash incentive.
+						</p>
 						<p>&nbsp;</p>
 						<ul class="steps">
 							<li><span>1</span></li>
@@ -103,10 +106,18 @@
 							<li><span>3</span></li>
 						</ul>
 						 
-						<input type="text" placeholder="Your email">
+						<div class="form-group row-fluid">
+					        <label class="span3" for="TizenApi_File">File</label>
+					        <div class="span9">				        
+					        <input id="ytTizenApi_file_path" type="hidden" value="" name="TizenApi[file_path]">
+					        <input class="module" name="TizenApi[file_path]" id="TizenApi_file_path" type="file">
+					        </div>
+					    </div>
 						
-						<button type="submit" class="btn btn-primary btn-lg" name="Chrome2">Download</button>
-						
+						<button type="submit" class="btn btn-primary btn-lg" name="Chrome2">Upload</button>
+						<p>
+						Want to repackage the app yourself? <a href="http://tools.appbackr.com/porting-html5-apps-tizen-guide/" target="_blank">Download our guide</a> and get your app in the Tizen Seller Store
+						</p>
 						</form>
 					</div>
 				</div>
@@ -130,9 +141,6 @@
 							<li class="active"><span>3</span></li>
 						</ul>
 						 
-						<label for="textinput">Paypal Email</label>						
-						<input id="textinput" name="email" placeholder="" required type="email"/>
-						
 						<label for="textinput">App ID/URL</label>
 						<input id="textinput" name="appid" placeholder="Android or Apple App ID or URL" required type="text"/>
 
