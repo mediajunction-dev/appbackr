@@ -65,20 +65,131 @@
 						  <li><a href="/account/earnings-reports.html"><i class="ico-earnings"></i>Earnings &amp; Reports</a></li>
 						  <li class="divider"></li>
 						  <li><a href="/account/profile-settings.html"><i class="ico-profile"></i>Profile Settings</a></li>
-						  <li class="active">
-						  	<a href="/account/payment-settings.html"><i class="ico-payment"></i>Payment Settings</a>
-						  	<ul>
-						  		<li class="active"><a href="/account/payment-settings.html">Paypal</a></li>
-						  		<li><a href="/account/payment-settings-check.html">Check</a></li>
-						  		<li><a href="/account/payment-settings-wire-transfer.html">Wire Transfer</a></li>
-						  	</ul>
-						  </li>
+						  <li class="active"><a href="/account/payment-settings.html"><i class="ico-payment"></i>Payment Settings</a></li>
 						</ul>
 
 					</div>					
 				</div>
 				<div class="span9 portal-main">
-					
+					<div class="module">
+						<form class="module-form">
+						<div class="module-title">
+							<h3>Account Info</h3>
+						</div>
+						<div class="module-content">
+							<p>Make sure this information is accurate and up-to-date at all times.</p>
+							<div class="row-fluid">
+								<div class="span5">
+									<select name="payment_type" id="payment_type">
+										<option value="paypal">Paypal</option>
+										<option value="check">Check</option>
+										<option value="wire_transfer">Wire Transfer</option>
+									</select>
+								</div>
+							</div>
+							<div id="paypal">
+								<div class="help-block">The minimum balance for a PayPal cashout is $20.</div>
+								<div class="row-fluid">
+									<div class="span5">
+									<label for="paypal_email_address">Email Address</label>
+									<input type="email" name="paypal_email_address">
+									</div>
+								</div>
+							</div>
+							<div id="check">
+								<div class="help-block">The minimum balance for a Check cashout is $50.</div>
+								<div class="row-fluid">
+									<div class="span5">
+									<label for="check_payable">Make check payable to</label>
+									<input type="text" name="check_payable">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="address_1">Address 1</label>
+									<input type="text" name="address_1">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="address_2">Address 2</label>
+									<input type="text" name="address_2">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span5">
+									<label for="city">City</label>
+									<input type="text" name="city">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span5">
+									<label for="state_province">State / Province</label>
+									<input type="text" name="state_province">
+									</div>	
+								</div>
+								<div class="row-fluid">
+									<div class="span5">
+									<label for="country">Country</label>
+									<select name="country">
+										<option name="">Select a Country</option>
+									</select>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3">
+									<label for="postal_code">Postal Code</label>
+									<input type="text" name="postal_code">
+									</div>	
+								</div>
+							</div>
+							<div id="wire">
+								<div class="help-block">The minimum balance for a wire transfer is $500, and there is a $35 transaction fee.</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="iban_account_num">IBAN or Account Number</label>
+									<input type="text" name="iban_account_num">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span5">
+									<label for="routing_num_swift">Routing Number or SWIFT Code</label>
+									<input type="text" name="routing_num_swift">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="beneficiary_name">Beneficiary Name</label>
+									<input type="text" name="beneficiary_name">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="beneficiary_address">Beneficiary Address</label>
+									<input type="text" name="beneficiary_address">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="bank_name">Bank Name</label>
+									<input type="text" name="bank_name">
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span7">
+									<label for="bank_address">Bank Address</label>
+									<input type="text" name="bank_address">
+									</div>
+								</div>
+							</div>														
+							
+						</div><!--/ .module-content -->
+						<div class="module-actions">
+							<button class="btn btn-primary">SAVE PAYMENT INFO</button>
+						</div>
+						</form>
+						
+					</div><!--/ .module -->
 				</div>
 			</div>
 		</div>
@@ -116,6 +227,33 @@
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="../assets/js/plugins.min.js"></script>
 <script src="../assets/js/portal.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#paypal").show();
+	$("#check").hide();
+	$("#wire").hide();
+});
+$('#payment_type').on('change',function(){	
+    if( $(this).val()==="paypal"){
+    	$("#paypal").show()
+    }
+    else{
+    	$("#paypal").hide()
+    }
+    if( $(this).val()==="check"){
+    	$("#check").show()
+    }
+    else{
+    	$("#check").hide()
+    }
+    if( $(this).val()==="wire_transfer"){
+    	$("#wire").show()
+    }
+    else{
+    	$("#wire").hide()
+    }
+});
+</script>
 
 <script>
 var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];
