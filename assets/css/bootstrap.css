@@ -747,7 +747,7 @@ blockquote small {
   height: 30px;
   overflow: hidden;
   border-bottom: 1px solid #ccc;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 12;
@@ -2608,14 +2608,6 @@ blockquote small {
 /* ------------------------
 08 Unique Pages
 ------------------------ */
-.home .site-header .nav,
-.home .sidr-inner:first-child {
-  display: none;
-  visibility: hidden;
-}
-.home .sidr-inner:last-child {
-  margin-top: 30px;
-}
 .home .billboard {
   display: table-cell;
   vertical-align: middle;
