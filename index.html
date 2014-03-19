@@ -198,6 +198,20 @@ $(document).ready(function() {
 		
 	}
 });
+// Fit Sections to browser
+$(document).ready(function() {
+   function viewport_height() {
+      var window_height = $(window).height();
+      $('#billboard').height(window_height);
+   }
+
+   viewport_height();
+
+   $(window).resize(function() {
+      viewport_height();
+  });
+
+});
 </script>
 <script src="assets/js/plugins.min.js"></script>
 <script src="assets/js/main.min.js"></script>

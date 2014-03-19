@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic);
+@import "url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic)";
 /*!
  * Bootstrap v2.3.2
  *
@@ -2611,14 +2611,12 @@ blockquote small {
 .home .billboard {
   display: table-cell;
   vertical-align: middle;
-  margin-top: 120px;
 }
 .home .billboard .app-circle {
   width: 100%;
   height: 300px;
   position: relative;
   z-index: 2;
-  margin-top: 120px;
   top: 120px;
   opacity: 0;
   background: url(../images/score-zoom-billboard.png) no-repeat center bottom;
@@ -3219,6 +3217,10 @@ Print Styles
     position: relative !important;
     display: block !important;
   }
+  .home .billboard,
+  .home .billboard .app-circle {
+    margin-top: 120px;
+  }
   .landing-page .billboard-container {
     height: auto !important;
   }
@@ -3240,6 +3242,10 @@ Print Styles
   }
   ul.steps-full li {
     width: 30%;
+  }
+  .home .billboard,
+  .home .billboard .app-circle {
+    margin-top: 120px;
   }
   .landing-page .site-header-alt {
     height: 60px;
