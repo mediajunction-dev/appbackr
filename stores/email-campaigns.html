@@ -6,16 +6,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>App Performance | appbackr</title>
+  <title>Store Dashboard | appbackr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../assets/js/fonts.min.js"></script>
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
-  <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
+  <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 <!--/ Chart Scripts -->
 </head>
-<body class="account">
+<body class="account stores">
 	<script src="../assets/js/highcharts.js"></script>
 	<script src="../assets/js/modules/exporting.js"></script>
 	<header class="site-header">
@@ -28,12 +27,18 @@
 					<span class="icon-bar"></span>
 					</a>
 					<a class="brand" href="/">appbackr&reg;</a>
-					<div id="main-nav"></div>					
+					<div id="main-nav">
+						<ul class="nav">
+							<li><a href="/xchange">Xchange</a></li>
+							<li><a href="/aboutUs">About</a></li>
+							<li><a href="/blog">Blog</a></li>
+						</ul>
+					</div>					
 					<div class="secondary-nav">
 						<div class="notification success">
-							<a href="/account/opportunities.html">3 New Offers!</a>
+							<a href="/stores/opportunities.html">3 New Offers!</a>
 						</div>
-						<a class="username" href="/account/">Bob Blahblah</a>
+						<a class="username" href="/stores/">Three</a>
 						<a class="signout" href="/site/login">SIGN OUT</a>
 					</div>				
 				</div>
@@ -46,8 +51,9 @@
 				<div class="span12">
 					<div class="crumbs">
 						<ul>
-							<li><a href="/account/">Account</a></li>
-							<li class="active"><a href="#">App Performance</a></li>
+							<li><a href="/stores/">Account</a></li>
+							<li><a href="/app-performance/">App Performance</a></li>
+							<li class="active"><a href="#">Email Campaigns</a></li>
 						</ul>
 					</div>
 				</div>
@@ -57,28 +63,26 @@
 					<div class="module module-nav">
 
 						<ul class="nav nav-list">
-						  <li><a href="/account"><i class="ico-overview"></i>Overview</a></li>
-						  <li>
-						  	<a href="/account/opportunities.html"><i class="ico-opportunities"></i>Opportunities <span class="badge badge-success">3</span></a>
+						  <li><a href="/stores"><i class="ico-overview"></i>Overview</a></li>
+						  <li class="active">
+						  	<a href="/stores/app-performance.html"><i class="ico-performance"></i>App Performance</a>
 						  	<ul>
-						  		<li><a href="/account/opportunities.html">Current</a></li>
-						  		<li><a href="">Accepted</a></li>
-						  		<li><a href="">Deleted</a></li>
+						  		<li><a href="/stores/app-performance.html">Feature Campaigns</a></li>
+						  		<li class="active"><a href="/stores/email-campaigns.html">Email Campaigns</a></li>
 						  	</ul>
 						  </li>
-						  <li class="active"><a href="/account/app-performance.html"><i class="ico-performance"></i>App Performance</a></li>
-						  <li><a href="/account/earnings-reports.html"><i class="ico-earnings"></i>Earnings &amp; Reports</a></li>
+						  <li><a href="/stores/app-search.html"><i class="ico-search"></i>App Search</a></li>
+						  <li><a href="/stores/carrier-channel.html"><i class="ico-apps"></i>Carrier Channel</a></li>
 						  <li class="divider"></li>
-						  <li><a href="/account/profile-settings.html"><i class="ico-profile"></i>Profile Settings</a></li>
-						  <li><a href="/account/payment-settings.html"><i class="ico-payment"></i>Payment Settings</a></li>
+						  <li><a href="/stores/profile-settings.html"><i class="ico-profile"></i>Profile Settings</a></li>
+						  <li><a href="/stores/payment-settings.html"><i class="ico-payment"></i>Payment Settings</a></li>
 						</ul>
 
 					</div>					
 				</div>
 				<div class="span9 portal-main">					
-					
-					<!-- Account Balance -->
-					<div class="module app-offers">
+					<!-- Account Overview -->
+					<div class="module">						
 						<form class="module-form app-performance-form">
 						<div class="module-title">
 							
@@ -91,117 +95,134 @@
 							</select>
 						
 							<select name="app_select" id="app_select">
-								<option value="all_apps">All</option>
-								<option value="app_name_1">App Name 1</option>
-								<option value="app_name_2">App Name 2</option>
+								<option value="all_campaigns">All</option>
+								<option value="campaign_1">Campaign 1</option>
+								<option value="campaign_2">Campaign 2</option>
 							</select>
 							
 						</div>
-						<div id="chart-container" class="module-charts">
-						
+						<div class="module-content-columns">
+							<div class="row-fluid">
+								<div class="span6">
+									<div id="browser-chart" class="module-charts">
+										<div class="placeholder-text"><span>Browsers Pie Chart</span></div>
+									</div>
+								</div>
+								<div class="span6">
+									<div id="country-chart" class="module-charts">
+										<div class="placeholder-text"><span>Countries Pie Chart</span></div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="module-content-columns module-numbers">
-							<div class="row-fluid">
-								<div class="span4 revenue">
+							<div class="row-fluid">								
+								<div class="span3 live-apps">
 									<div class="number">
-									$12,000
-									<small>Total Revenue</small>
+									38
+									<small>Total Campaigns</small>
 									</div>
 								</div>
-								<div class="span4 downloads">
+								<div class="span3 opens">
 									<div class="number">
-									110,500
-									<small>Downloads</small>
+									93%
+									<small>Avg. Open Rate</small>
 									</div>
 								</div>
-								<div class="span4 avg-score">
+								<div class="span3 clicks">
 									<div class="number">
-									8.4
-									<small>Avg. Score</small>
+									75%
+									<small>Avg. Click Rate</small>
+									</div>
+								</div>
+								<div class="span3 avg-score">
+									<div class="number">
+									8.42
+									<small>Avg. Appscore</small>
 									</div>
 								</div>
 							</div>
 						</div>
 						</form>
-					</div>
-					<table class="module-table app-performance">
+					</div><!--/ .module -->
+					<table class="module-table table-hover table-email-campaigns">
 						<thead>
 							<tr>
-							<th><h3>App</h3></th>
-							<th>Total Revenue</th>
-							<th>Downloads</th>
-							<th>Score</th>
+							<th><h3>Recent Campaigns</h3></th>
+							<th>Delivered</th>
+							<th>Open Rate</th>
+							<th>Click Rate</th>
+							<th>Appscore</th>								
 							</tr>
 						</thead>
 						<tbody>
-							<!-- Row -->
-							<tr>
-							<td>
-								<span class="app-icon app-icon-xs"><img src="../assets/images/angry-birds-icon.jpg"></span>
-								App Name
-							</td>
-							<td class="large">$10,000</td>
-							<td class="large">10,000</td>
-							<td>
-								<span class="app-score-icon app-icon-xs"><span>8.9</span> <i class="score-up"></i></span>
-							</td>
-							</tr>
-							<!--/ Row -->
-							<!-- Row -->
-							<tr>
-							<td>
-								<span class="app-icon app-icon-xs"><img src="../assets/ui-images/icon-missing-app.png"></span>
-								App Name
-							</td>
-							<td class="large">$0</td>
-							<td class="large">—</td>
-							<td>
-								<span class="app-score-icon app-icon-xs no-score"><span>&#8230;</span></span>
-							</td>
-							</tr>
-							<!--/ Row -->
-							<!-- Row -->
-							<tr>
-							<td>
-								<span class="app-icon app-icon-xs"><img src="../assets/images/angry-birds-icon.jpg"></span>
-								App Name
-							</td>
-							<td class="large">$2,000</td>
-							<td class="large">100,000</td>
-							<td>
-								<span class="app-score-icon app-icon-xs"><span>7.9</span> <i class="score-down"></i></span>
-							</td>
-							</tr>
-							<!--/ Row -->
-							<!-- Row -->
-							<tr>
-							<td>
-								<span class="app-icon app-icon-xs"><img src="../assets/images/angry-birds-icon.jpg"></span>
-								App Name
-							</td>
-							<td class="large">$10,000</td>
-							<td class="large">10,000</td>
-							<td>
-								<span class="app-score-icon app-icon-xs"><span>9.4</span></span>
-							</td>
-							</tr>
-							<!--/ Row -->							
+						<!-- Row -->
+						<tr>
+						<td>
+							Campaign Name
+						</td>
+						<td class="large delivered">17.5%</td>
+						<td class="large opens">2.5%</td>
+						<td class="large clicks">7,852</td>
+						<td>
+							<span class="app-score-icon app-icon-sm"><span>8.9</span> <i class="score-up"></i></span>
+						</td>
+						</tr>
+						<!--/ Row -->
+						<!-- Row -->
+						<tr>
+						<td>
+							Campaign Name
+						</td>
+						<td class="large delivered">17.5%</td>
+						<td class="large opens">2.5%</td>
+						<td class="large clicks">7,852</td>
+						<td>
+							<span class="app-score-icon app-icon-sm"><span>8.9</span> <i class="score-up"></i></span>
+						</td>
+						</tr>
+						<!--/ Row -->
+						<!-- Row -->
+						<tr>
+						<td>
+							Campaign Name
+						</td>
+						<td class="large delivered">17.5%</td>
+						<td class="large opens">2.5%</td>
+						<td class="large clicks">7,852</td>
+						<td>
+							<span class="app-score-icon app-icon-sm"><span>8.9</span> <i class="score-up"></i></span>
+						</td>
+						</tr>
+						<!--/ Row -->
+						<!-- Row -->
+						<tr>
+						<td>
+							Campaign Name
+						</td>
+						<td class="large delivered">17.5%</td>
+						<td class="large opens">2.5%</td>
+						<td class="large clicks">7,852</td>
+						<td>
+							<span class="app-score-icon app-icon-sm"><span>8.9</span> <i class="score-up"></i></span>
+						</td>
+						</tr>
+						<!--/ Row -->
+						<!-- Row -->
+						<tr>
+						<td>
+							Campaign Name
+						</td>
+						<td class="large delivered">17.5%</td>
+						<td class="large opens">2.5%</td>
+						<td class="large clicks">7,852</td>
+						<td>
+							<span class="app-score-icon app-icon-sm"><span>8.9</span> <i class="score-up"></i></span>
+						</td>
+						</tr>
+						<!--/ Row -->
 						</tbody>
 					</table>
-					
-					<div class="module claim-app-button">
-						<div class="module-content">
-						<div class="missing-app">
-							Not seeing an App?
-						</div>
-						<a class="plus" href="#">
-							CLAIM YOUR APP
-						</a>
-						</div>
-					</div>
-					
-					
-					
 					
 				</div>
 			</div>
@@ -235,13 +256,18 @@
 		</div>
 		</div>
 	</footer>
+	
 
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="../assets/js/bootstrap-multiselect.js"></script>
 <script src="../assets/js/plugins.min.js"></script>
 <script src="../assets/js/portal.min.js"></script>
 
 <!-- Chart Scripts -->
 <script type="text/javascript">
+$(document).ready(function() {
+	$('.multiselect').multiselect();
+});
 $(function () {
 $('#chart-container').highcharts({
 	title: {
@@ -287,7 +313,6 @@ $('#chart-container').highcharts({
 });
 });
 </script>
-
 
 <script>
 var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];
