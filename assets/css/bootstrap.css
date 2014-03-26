@@ -1,4 +1,4 @@
-@import "url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic)";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic);
 /*!
  * Bootstrap v2.3.2
  *
@@ -213,6 +213,10 @@ textarea {
 /* ------------------------
 01 General Site Elements 
 ------------------------ */
+body,
+html {
+  height: 100%;
+}
 body {
   position: relative;
 }
@@ -2247,7 +2251,8 @@ td.delivered {
 td.opens {
   color: #26a2fb;
 }
-.avg-score .number small {
+.avg-score .number small,
+td.avg-score {
   color: #fb7200;
 }
 .earnings .number small,
@@ -2895,6 +2900,12 @@ td.clicks {
 .amazon-offer #more {
   padding-top: 0 !important;
 }
+.account #main {
+  min-height: 75%;
+}
+.account #main > .container {
+  padding-bottom: 140px;
+}
 .account a.btn-primary,
 .account a.btn-success {
   font-size: 14px !important;
@@ -2921,15 +2932,12 @@ td.clicks {
   visibility: hidden;
   margin-bottom: 0 !important;
 }
-.account .portal-main {
-  margin-bottom: -1.5em;
-}
 .account .sidr-inner:first-child {
   text-align: center;
 }
 .account .site-footer {
-  margin-top: 40px;
-  height: 100px;
+  margin-top: -140px;
+  height: 140px;
 }
 .offer-workflow .sidr-inner {
   display: none !important;
@@ -7008,6 +7016,10 @@ input[type="button"].btn-block {
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
+}
+[data-toggle="buttons"] > .btn > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="checkbox"] {
+  display: none;
 }
 .alert {
   padding: 8px 35px 8px 14px;

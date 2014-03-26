@@ -224,11 +224,15 @@
 								<option value="1_month">1 Month</option>
 								<option value="3_months">3 Months</option>
 								<option selected="selected" value="1_year">1 Year</option>
-							</select>						
-							<div class="btn-group">
-							  <button type="button" class="btn btn-default active">Revenue</button>
-							  <button type="button" class="btn btn-default">Installs</button>
-							</div>
+							</select>
+							<div class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-default active">
+							    <input type="radio" name="revenue" id="revenue"> Revenue
+							  </label>
+							  <label class="btn btn-default">
+							    <input type="radio" name="installs" id="installs"> Installs
+							  </label>
+							</div>										
 							<button class="btn btn-success pull-right">Export</button>
 							
 						</div>
