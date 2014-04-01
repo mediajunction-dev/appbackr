@@ -2938,6 +2938,8 @@ td.clicks {
 .account .site-footer {
   margin-top: -140px;
   height: 140px;
+  position: relative;
+  z-index: 1;
 }
 .offer-workflow .sidr-inner {
   display: none !important;
