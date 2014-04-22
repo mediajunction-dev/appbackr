@@ -922,8 +922,9 @@ blockquote small {
 }
 .site-header .secondary-nav .dropdown {
   display: inline-block;
-  text-align: center;
-  top: -3px;
+  text-align: left;
+  top: 0;
+  vertical-align: top;
 }
 .site-header .secondary-nav .dropdown .caret {
   margin-top: 13px;
@@ -2172,6 +2173,17 @@ blockquote small {
   text-transform: none;
   font-weight: 400;
 }
+.module-table .tracking {
+  white-space: nowrap;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.module-table.module-table-sm td,
+.module-table.module-table-sm th {
+  padding: 10px !important;
+}
 .campaign-link {
   text-decoration: none;
 }
@@ -2876,6 +2888,17 @@ td.status-notlive {
 .modal-alert .modal-footer {
   margin: 0 -20px -20px;
 }
+.modal-full .close {
+  top: 8px;
+  right: 8px;
+}
+.modal-full .modal-dialog {
+  width: 90%;
+  height: 90%;
+}
+.modal-full .modal-content {
+  height: 100%;
+}
 .video-only .modal-dialog {
   overflow: visible !important;
 }
@@ -3127,6 +3150,93 @@ td.status-notlive {
 }
 .amazon-offer #more {
   padding-top: 0 !important;
+}
+.app-wall {
+  background: #eee;
+}
+.app-wall .app-wall-header {
+  padding: 1em 0;
+  background-color: #fb7200;
+  color: #ffffff;
+}
+.app-wall .app-wall-header h1,
+.app-wall .app-wall-header h2,
+.app-wall .app-wall-header h3,
+.app-wall .app-wall-header h4 {
+  color: #ffffff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 1em;
+}
+.app-wall .app-wall-body {
+  padding: 30px 0;
+}
+.app-wall .app-wall-body .app-wall-body-inner {
+  padding: 0 12%;
+  text-align: center;
+}
+.app-wall .app-pin {
+  display: inline-block;
+}
+.app-wall .app-pin a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  width: 87px;
+  height: 170px;
+  display: inline-block;
+  margin: 8px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.app-wall .app-pin .app-icon {
+  display: block;
+}
+.app-wall .app-pin .app-name {
+  height: 40px;
+  font-size: 1em;
+  color: #222222 !important;
+  padding: 10px 0 15px 0;
+  text-align: left;
+  overflow: hidden;
+}
+.app-wall .app-pin .app-rating,
+.app-wall .app-pin .app-price {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.app-wall .app-pin .app-rating {
+  font-size: 10px;
+  left: 10px;
+  color: #ddd !important;
+}
+.app-wall .app-pin .app-rating span.fill {
+  color: #818485 !important;
+}
+.app-wall .app-pin .app-price {
+  right: 10px;
+  color: #fb7200 !important;
+}
+.app-wall .app-pin a:hover {
+  top: -3px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.app-wall .app-pin a:hover .app-name {
+  color: #26a2fb !important;
 }
 .account #main {
   min-height: 75%;
