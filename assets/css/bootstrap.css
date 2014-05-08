@@ -1756,7 +1756,8 @@ blockquote small {
   display: none;
 }
 .score-up,
-.score-down {
+.score-down,
+.score-arrow {
   display: block;
   width: 1em;
   height: 1em;
@@ -1775,6 +1776,9 @@ blockquote small {
 }
 .score-down {
   background-image: url(../ui-images/score-down.png);
+}
+.score-arrow {
+  background-image: url(../images/score-arrow.png);
 }
 .app-icon-xs {
   font-size: 14px;
@@ -2636,7 +2640,19 @@ td.status-notlive {
   vertical-align: middle;
 }
 .app-full-detail {
-  margin-bottom: .5em;
+  margin-bottom: .75em;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+}
+.app-full-detail:hover {
+  border-color: #999;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  top: -2px;
 }
 .app-full-detail .app-detail-toggle {
   cursor: pointer;
@@ -3049,6 +3065,101 @@ td.status-notlive {
 .appscore .section-background-image h3 {
   margin-bottom: .3em;
 }
+.xchange .billboard {
+  width: 100%;
+  height: 40em;
+  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center 15em fixed;
+  background-size: cover;
+}
+.xchange .billboard h1 {
+  font-size: 3.25em;
+  font-weight: 300;
+  margin-top: 1em;
+  line-height: 1.1;
+  color: #222222;
+}
+.xchange .billboard h3 {
+  font-size: 1.35em !important;
+}
+.xchange .billboard .appscore-input {
+  width: 55% !important;
+  font-size: 1.75em !important;
+  padding: 22px 0;
+  text-indent: 25px;
+  font-weight: 400;
+  margin: 1em auto !important;
+}
+.xchange .billboard .vert-content {
+  width: 100%;
+  height: 40em;
+  display: table;
+  vertical-align: middle;
+}
+.xchange .billboard .vert-content-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.xchange .billboard.score-result {
+  height: 35em !important;
+  height: auto;
+  margin-top: 50px !important;
+}
+.xchange .billboard.score-result .vert-content {
+  height: 35em;
+}
+.xchange .billboard.score-result h2 {
+  font-size: 2.5em;
+  margin-bottom: .5em;
+}
+.xchange .appscore-feature {
+  width: 30em;
+  min-width: 30em;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  background-color: #fff;
+  *zoom: 1;
+}
+.xchange .appscore-feature:before,
+.xchange .appscore-feature:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.xchange .appscore-feature:after {
+  clear: both;
+}
+.xchange .appscore-feature .app-detail,
+.xchange .appscore-feature .score-info {
+  padding: 1.25em;
+}
+.xchange .appscore-feature .app-detail {
+  width: 60%;
+  float: left;
+}
+.xchange .appscore-feature .app-detail .app-icon {
+  display: inline-block;
+}
+.xchange .appscore-feature .app-detail h2 {
+  display: inline-block;
+  font-size: 1.75em !important;
+  color: #fb7200;
+  font-weight: 400;
+  text-align: left;
+}
+.xchange .appscore-feature .app-detail h2 small {
+  display: block;
+  font-size: 55%;
+  letter-spacing: .08em;
+  color: #818485;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.xchange .appscore-feature .score-info {
+  width: 20%;
+  float: right;
+  border-left: 2px solid #ddd;
+}
 .landing-page {
   padding-top: 6em;
 }
@@ -3151,8 +3262,65 @@ td.status-notlive {
 .amazon-offer #more {
   padding-top: 0 !important;
 }
+.app-list {
+  background: #eee;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.app-list .app-list-inner {
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.app-list .app-link {
+  display: block;
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
+  *zoom: 1;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.app-list .app-link:before,
+.app-list .app-link:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.app-list .app-link:after {
+  clear: both;
+}
+.app-list .app-link .app-icon,
+.app-list .app-link .app-info {
+  display: inline-block;
+}
+.app-list .app-link .app-icon {
+  float: left;
+  margin-right: 8px;
+}
+.app-list .app-link .app-info {
+  float: left;
+  font-size: 16px;
+}
+.app-list .app-link .app-score-icon {
+  float: right;
+}
+.app-list .app-link:hover {
+  background-color: #eee;
+}
+.app-list .app-link:first-child {
+  border-radius: 3px 3px 0 0;
+}
+.app-list .app-link:last-child {
+  border-radius: 0 0 3px 3px;
+  border-bottom: none;
+}
 .app-wall {
   background: #eee;
+  position: relative;
 }
 .app-wall .app-wall-header {
   padding: 1em 0;
@@ -3170,23 +3338,42 @@ td.status-notlive {
   margin: 0 1em;
 }
 .app-wall .app-wall-body {
-  padding: 30px 0;
+  padding: 5px 7px;
 }
 .app-wall .app-wall-body .app-wall-body-inner {
-  padding: 0 12%;
-  text-align: center;
+  text-align: left;
 }
 .app-wall .app-pin {
   display: inline-block;
+  position: relative;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.app-wall .app-pin .close {
+  font-size: 16px;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  z-index: 1;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.app-wall .app-pin .close:hover {
+  color: #d52335;
 }
 .app-wall .app-pin a {
   display: block;
   padding: 10px;
   text-decoration: none;
+  z-index: 0;
   width: 87px;
   height: 170px;
   display: inline-block;
-  margin: 8px;
+  margin: 5px 3px;
   overflow: hidden;
   position: relative;
   background: #fff;
@@ -3218,24 +3405,27 @@ td.status-notlive {
   line-height: 15px;
 }
 .app-wall .app-pin .app-rating {
-  font-size: 10px;
+  font-size: 14px;
   left: 10px;
-  color: #ddd !important;
-}
-.app-wall .app-pin .app-rating span.fill {
-  color: #818485 !important;
+  color: #fb7200 !important;
+  font-weight: 700;
 }
 .app-wall .app-pin .app-price {
   right: 10px;
-  color: #fb7200 !important;
+  color: #818485 !important;
 }
-.app-wall .app-pin a:hover {
+.app-wall .app-pin:hover {
   top: -3px;
+}
+.app-wall .app-pin:hover .close {
+  opacity: 1;
+}
+.app-wall .app-pin:hover a {
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-.app-wall .app-pin a:hover .app-name {
+.app-wall .app-pin:hover .app-name {
   color: #26a2fb !important;
 }
 .account #main {
