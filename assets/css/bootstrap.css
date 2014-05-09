@@ -313,6 +313,21 @@ a.delete:hover {
   background-position: 0 -14px;
   text-decoration: none;
 }
+.btn-accept {
+  display: block;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 22px;
+  left: 70%;
+  text-indent: -9999px;
+  border: none;
+  background: url(../ui-images/check-accept-sprite.png) no-repeat 0 -14px;
+}
+.btn-accept:hover {
+  background-position: 0 1px;
+}
 a.accept {
   background-image: url(../ui-images/check-accept-sprite.png);
 }
@@ -394,6 +409,15 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.vert-content {
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+}
+.vert-content-inner {
+  display: table-cell;
+  vertical-align: middle;
 }
 /* ------------------------
 02 Forms
@@ -1560,6 +1584,7 @@ blockquote small {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #222222;
+  background-attachment: fixed;
 }
 @media (min-width: 768px) {
   .section-background-image {
@@ -2413,6 +2438,11 @@ td.status-notlive {
   font-size: 24px !important;
   line-height: 30px;
 }
+.module-form .loading {
+  background-image: url(../ui-images/loading.gif);
+  background-repeat: no-repeat;
+  background-position: 96% 18px;
+}
 .module-form .help-block {
   font-size: 13px;
   color: #818485;
@@ -2704,20 +2734,29 @@ td.status-notlive {
   filter: alpha(opacity=15) !important;
 }
 .app-full-detail.verification-needed .app-detail-toggle .verification-form {
+  width: 300px;
   padding: 15px 0 0;
   float: left;
   margin: 0 0 0 30px;
+  position: relative;
 }
 .app-full-detail.verification-needed .app-detail-toggle .verification-form input {
+  width: 100% !important;
   border-radius: 30px;
-  padding: 5px 10px;
+  padding: 5px 0;
+  text-indent: 10px;
 }
-.app-full-detail.verification-needed .app-detail-toggle .verification-form a {
+.app-full-detail.verification-needed .app-detail-toggle .verification-form .btn-link {
+  position: absolute !important;
   display: inline-block;
-  font-size: 12px;
-  margin-left: 10px;
-  top: -5px;
+  font-size: 14px;
+  padding: 5px 10px 3px;
+  background-color: #fff;
+  border-radius: 0 50px 50px 0;
+  top: 16px;
+  right: 0;
   position: relative;
+  border-left: 1px solid #ccc;
 }
 .app-full-detail.verification-needed .app-detail-collapse {
   display: none !important;
@@ -2977,15 +3016,28 @@ td.status-notlive {
 .claim-app-tab-content {
   overflow: visible !important;
 }
-#claim-search-results {
+#claim-search-results,
+#claim-search-no-results {
   margin: 1.5em 0;
+  padding: 0;
   text-align: center;
 }
+#claim-search-results .app-icon {
+  float: left;
+  display: block;
+}
+#claim-search-results .app-name {
+  float: right;
+  display: block;
+  width: 110px;
+}
 #claim-search-results .claim-app-link {
-  padding: 20px;
+  vertical-align: top;
+  margin-bottom: 1em;
+  padding: 10px;
   display: inline-block;
   text-align: left;
-  width: 30.5%;
+  width: 180px;
   border-radius: 3px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -2993,9 +3045,10 @@ td.status-notlive {
   transition: 0.3s;
 }
 #claim-search-results .claim-app-link h2 {
-  font-size: 1.25em;
+  font-size: 1.125em;
   color: #fb7200;
   font-weight: normal;
+  margin-left: 0;
 }
 #claim-search-results .claim-app-link h2 small {
   display: block;
@@ -3008,6 +3061,26 @@ td.status-notlive {
 }
 #claim-search-results .claim-app-link:hover h2 {
   color: #26a2fb;
+}
+#claim-search-no-results {
+  height: 20em;
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  border: 2px dashed #ddd;
+}
+#claim-search-no-results .no-results-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#claim-search-no-results .no-results-message {
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #999;
 }
 /* ------------------------
 08 Unique Pages
@@ -3067,7 +3140,7 @@ td.status-notlive {
 }
 .xchange .billboard {
   width: 100%;
-  height: 40em;
+  height: 45em;
   background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center 15em fixed;
   background-size: cover;
 }
@@ -3082,7 +3155,7 @@ td.status-notlive {
   font-size: 1.35em !important;
 }
 .xchange .billboard .appscore-input {
-  width: 55% !important;
+  width: 95% !important;
   font-size: 1.75em !important;
   padding: 22px 0;
   text-indent: 25px;
@@ -3090,24 +3163,116 @@ td.status-notlive {
   margin: 1em auto !important;
 }
 .xchange .billboard .vert-content {
+  height: 45em;
+}
+.xchange .section-background-image {
+  font-size: 13px;
+}
+.xchange .section-background-image,
+.xchange .section-background-image .vert-content {
+  height: auto;
+}
+.xchange .section-background-image .vert-content {
+  padding: 2em 0;
+}
+.xchange .section-background-image small {
+  margin: 0 auto;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fb7200;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999999;
+}
+.xchange .section-background-image h2,
+.xchange .section-background-image h3,
+.xchange .section-background-image h4,
+.xchange .section-background-image h5,
+.xchange .section-background-image h6,
+.xchange .section-background-image p {
+  text-align: center;
+}
+.xchange .section-background-image hr {
+  margin: 25px auto 20px;
+  border-bottom-color: #999999;
+  border-top: none;
+}
+.xchange .section-background-image h2 {
+  line-height: 1.1;
+}
+.xchange .section-background-image h3 {
+  font-size: 1.25em;
+}
+.xchange .section-background-image p {
+  font-size: 1em;
+  padding: 0 10%;
+  color: #ccc;
+  font-weight: 300;
+}
+.xchange .section-what-is-xchange {
+  background-image: url(../images/fullscreen-phone-group.jpg);
+}
+.xchange .section-what-is-xchange .plus {
   width: 100%;
-  height: 40em;
-  display: table;
-  vertical-align: middle;
+  margin: 20px 0;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 4em;
 }
-.xchange .billboard .vert-content-inner {
-  display: table-cell;
-  vertical-align: middle;
+.xchange .xchange-appscore-reach {
+  font-size: 12px;
+  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center top;
 }
-.xchange .billboard.score-result {
+.xchange .xchange-appscore-reach .appscore-arrows {
+  width: 100%;
+}
+.xchange .section-what-is-appscore {
+  background-image: url(../images/fullscreen-device-closeup.jpg);
+}
+.xchange .section-what-is-appscore h3 {
+  color: #ffffff;
+}
+.xchange .industry-logos {
+  text-align: center;
+  padding: 2em 0;
+}
+.xchange .industry-logos img {
+  display: inline-block;
+  padding: 0 2em !important;
+}
+@media (min-width: 768px) {
+  .xchange .billboard .appscore-input {
+    width: 55% !important;
+  }
+  .xchange .section-background-image {
+    font-size: 18px;
+  }
+  .xchange .section-background-image,
+  .xchange .section-background-image .vert-content {
+    height: 35em;
+  }
+  .xchange .section-background-image .vert-content {
+    padding: 0;
+  }
+  .xchange .xchange-appscore-reach {
+    font-size: 16px;
+  }
+  .xchange .section-what-is-xchange .plus {
+    margin: 90% 0 0;
+  }
+}
+.xchange .score-result {
   height: 35em !important;
   height: auto;
   margin-top: 50px !important;
 }
-.xchange .billboard.score-result .vert-content {
+.xchange .score-result .vert-content {
   height: 35em;
 }
-.xchange .billboard.score-result h2 {
+.xchange .score-result h2 {
   font-size: 2.5em;
   margin-bottom: .5em;
 }
@@ -3477,6 +3642,215 @@ td.status-notlive {
 .claim-workflow .sidr-inner:first-child {
   display: block !important;
 }
+.login {
+  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center top;
+}
+.login header {
+  margin-top: 30px;
+}
+.login a.brand {
+  width: 220px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  text-indent: -9999px;
+  background: url(../images/appbackr-brand.jpg) no-repeat center center;
+}
+.login .brand {
+  margin: 0 auto 1em;
+}
+.login .login-container {
+  margin: 2.25em 30px .5em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.login .login-inner {
+  padding: 0 2em 1em;
+}
+.login .login-inner h2 {
+  margin: 0 0 20px;
+  font-size: 2em;
+  text-align: center;
+}
+.login .login-inner h6 {
+  font-size: .875em;
+  margin: 0 0 20px;
+}
+.login .login-inner.border-bottom {
+  border-bottom: 1px solid #ddd;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+}
+.login .login-inner.alt-logins {
+  padding: 0;
+}
+.login .login-inner.alt-logins .login-inner {
+  padding: 1.25em 2em;
+}
+.login .login-inner.alt-logins .span6:first-child .login-inner {
+  border-bottom: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .login .login-inner.alt-logins .span6:first-child .login-inner {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+  }
+  .login .login-inner.alt-logins .span6 {
+    width: 50% !important;
+    margin: 0 !important;
+  }
+}
+.login .login-inner .border-right {
+  border-right: 1px solid #ddd;
+}
+.login .login-form input[type="text"],
+.login .login-form input[type="password"] {
+  width: 100%;
+  height: auto;
+  padding: 12px 0 !important;
+  text-indent: 15px;
+  font-size: 23px;
+  line-height: normal;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.login .login-form .help-block {
+  font-size: 14px;
+  text-align: center;
+}
+.login .login-form .help-block a {
+  color: #818485;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.login .login-form .help-block a:hover {
+  color: #26a2fb;
+}
+.login .login-form .actions {
+  *zoom: 1;
+  text-align: center;
+}
+.login .login-form .actions:before,
+.login .login-form .actions:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.login .login-form .actions:after {
+  clear: both;
+}
+.login .login-form .checkbox {
+  margin: 14px auto 0;
+  font-size: 14px;
+}
+.login .login-form .checkbox input {
+  margin-top: -4px;
+  margin-right: 5px;
+  display: inline-block;
+  float: none;
+}
+.login .login-form .btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 30%;
+  margin-top: 10px;
+  font-size: 1.125em;
+}
+.login .login-signup {
+  text-align: center;
+  padding: 10px 30px 1em;
+}
+.login .login-signup h4 {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+.login footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 2em;
+}
+.login footer p.copyright {
+  text-align: center;
+  font-size: .875em;
+  color: #818485;
+}
+.login footer p.copyright a {
+  color: #222222;
+  display: inline-block;
+  padding: 0 .5em;
+}
+@media (min-width: 768px) {
+  .login header {
+    margin-top: 5em;
+  }
+  .login .login-container,
+  .login footer {
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.signup .login-inner h2 {
+  margin-bottom: 0;
+}
+.signup .login-inner h4 {
+  text-align: center;
+  font-weight: 300;
+  color: #fb7200;
+}
+.signup .login-form input[type="text"],
+.signup .login-form input[type="password"] {
+  font-size: 20px;
+}
+.signup .login-form .help-block {
+  text-align: left;
+  color: #999;
+  clear: both;
+}
+.signup .login-form .checkbox {
+  float: none;
+  margin-top: 14px;
+  margin-left: 0;
+}
+.signup .login-form .checkbox input {
+  margin-top: 2px;
+  margin-right: 0;
+  display: block;
+  float: left;
+}
+.signup .login-form .actions {
+  text-align: center !important;
+  margin: 1em -2em -0.5em;
+  padding: 1.5em 2em 0;
+  border-top: 1px solid #ddd;
+  clear: both;
+}
+.signup .login-form .actions .btn-primary {
+  float: none;
+  display: inline-block;
+  padding: 12px 30%;
+  margin-top: 0;
+  font-size: 1.125em;
+}
+.signup footer {
+  border-top: none;
+  padding-top: 1em;
+}
+@media (min-width: 768px) {
+  .signup .login-form input[type="password"] {
+    width: 48%;
+    float: left;
+  }
+  .signup .login-form input[type="password"]:nth-child(2) {
+    margin-right: 3%;
+  }
+  .signup .login-form input[type="password"]:nth-child(3) {
+    float: right;
+  }
+}
 /* ------------------------
 Print Styles
 ------------------------ */
@@ -3778,9 +4152,6 @@ Print Styles
     position: fixed;
     top: 120px;
   }
-  #claim-search-results .claim-app-link {
-    width: 20.5%;
-  }
   .portal-main {
     float: right !important;
   }
@@ -3932,13 +4303,8 @@ Print Styles
     display: none !important;
     visibility: hidden;
   }
-  .account #claim-search-results .app-icon {
-    margin: 0 auto;
-    float: none;
-    display: block;
-  }
   .account #claim-search-results .claim-app-link {
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width: 480px) {
@@ -4727,7 +5093,7 @@ dd {
 hr {
   margin: 20px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
   border-bottom: 1px solid #ffffff;
 }
 abbr[title],
