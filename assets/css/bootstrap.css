@@ -3808,7 +3808,6 @@ td.status-notlive {
 .signup .login-form .help-block {
   text-align: left;
   color: #999;
-  clear: both;
 }
 .signup .login-form .checkbox {
   float: none;
@@ -3840,15 +3839,20 @@ td.status-notlive {
   padding-top: 1em;
 }
 @media (min-width: 768px) {
-  .signup .login-form input[type="password"] {
-    width: 48%;
+  .signup .login-form .input-first-name,
+  .signup .login-form .input-last-name,
+  .signup .login-form .input-password,
+  .signup .login-form .input-confirm-password {
+    width: 48.75% !important;
     float: left;
   }
-  .signup .login-form input[type="password"]:nth-child(2) {
-    margin-right: 3%;
-  }
-  .signup .login-form input[type="password"]:nth-child(3) {
+  .signup .login-form .input-last-name,
+  .signup .login-form .input-confirm-password {
     float: right;
+  }
+  .signup .login-form .input-email,
+  .signup .login-form .help-block {
+    clear: both;
   }
 }
 /* ------------------------
