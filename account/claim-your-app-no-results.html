@@ -88,115 +88,12 @@
 							</div>
 						</div>
 						<hr>
-						<div id="claim-search-results">
-							<a class="claim-app-link" href="#claim_01" data-toggle="modal">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
+						<div id="claim-search-no-results">
+							<div class="no-results-inner">
+								<div class="no-results-message">
+								NO RESULTS FOUND. <a href="#">Try Again?</a>
 								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds Angry Birds Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
-							<a class="claim-app-link" href="#">
-								<div class="app-detail">
-									<span class="app-icon app-icon-md-lg"><img src="../assets/images/angry-birds-icon.jpg"></span>
-									<h2 class="app-name">
-										Angry Birds
-										<small>Arcade</small>
-									</h2>
-								</div>
-							</a>
+							</div>
 						</div>
 					</form>
 					</div><!--/ #claim -->
@@ -318,6 +215,9 @@ $(function() {
 	$('#app_search_form').submit(function () {
 	 	$("#app_search").addClass("loading");
 	 	return false;
+	});
+	$('.no-results-inner a').click(function() {
+	     $('#app_search').focus();
 	});
 });
 
