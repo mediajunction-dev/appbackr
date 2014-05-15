@@ -56,11 +56,36 @@
 	</header>
 	
 	<section class="billboard" data-stellar-background-ratio="1.5">
+		<div class="vert-content">
+		<div class="vert-content-inner">
+		<div class="container billboard-content">					
+			<form class="module-form">
+				<div class="row-fluid">
+					<div class="span12">						
+						<h1 class="alignCenter">Get your appscore,<br>start seeing great offers.</h1>	
+						<h3 class="alignCenter orange">
+						Your app's score is the key to getting offers from<br>
+						app stores and helps in getting you top placement.
+						</h3>				
+						<input type="text" class="search-lg appscore-input" id="app_search" name="app_search" placeholder="Enter app name">
+						<p>
+						<a class="learn" href="#learn-more">Learn More</a>
+						</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+		</div>
+		<div id="learn-more"></div>
+	</section>
+	
+	<section class="section-light-gray">
 		<div class="container">
 			<div class="row-fluid">
 				<div class="span6">
-					<div class="billboard-content">
-					<h1 class="orange">What is the appscore?</h1>		
+					<div class="what-is-content">
+					<h2 class="orange">What is the appscore?</h2>		
 					<p>
 					Your app's score is the key to getting offers from
 					app stores and helps in getting you top placement.
@@ -72,7 +97,7 @@
 					Apps that score 8.5 or higher receive top offers for distribution and placement.
 					</h4>
 					<p>
-					<a class="btn btn-primary btn-lg" href="http://appbac.kr/1bzwdAn">GET YOUR SCORE</a>
+					<a class="btn-get-appscore btn btn-primary btn-lg" href="#">GET YOUR SCORE</a>
 					</p>
 					</div>
 				</div>
@@ -82,14 +107,10 @@
 					</h2>
 				</div>
 			</div>
-		</div>
-		<div id="learn-more"></div>
-	</section>
-	
-	<section class="section-light-gray">
-		<div class="container">
 			<div class="row-fluid">
 				<div class="span12">
+					<p>&nbsp;</p>
+					<hr>
 					<p>&nbsp;</p>
 					<p class="featured-logos">
 						<img src="../assets/images/logo-windows-phone.png" alt="Windows Phone">
@@ -104,7 +125,8 @@
 		</div>
 	</section>
 	<section class="section-background-image on-dark" data-stellar-background-ratio=".5">
-		
+		<div class="vert-content">
+		<div class="vert-content-inner">
 		<div class="container">
 			<div class="row-fluid">
 				<div class="span6">
@@ -120,7 +142,7 @@
 								Share it everywhere
 							</h3>
 							<p>
-								Paragraph about how appscore sharing works. Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua.
+								Developers can share their appscores to attract new users to their apps.
 							</p>
 						</div>
 					</div>
@@ -132,18 +154,17 @@
 						</div>
 						<div class="span8">
 							<h3>
-								Show your app’s value
+								Show your app's value
 							</h3>
 							<p>
-								Paragraph about how an appscore shows value. Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua.
+								Apps with high scores get better offers on <a href="/xchange/">Xchange</a>.
 							</p>
 						</div>
-					</div>
-					<p class="download">
-						Download this <a href="" target="_blank">free quide</a> for more great appscore uses!
-					</p>
+					</div>					
 				</div>
 			</div>
+		</div>
+		</div>
 		</div>
 	</section>
 	
@@ -258,19 +279,28 @@
 					
 				</div>
 			</div>
-		</div>
-		<hr>
+		</div>		
 	</section>
 	
 	<section id="featured">
 		<div class="container">
 			<div class="row-fluid">
-				<div class="span12">									
+				<div class="span12">
+					<p>&nbsp;</p>								
 					<h2>
-					Unlock the potential of your app.
-					</h2>	
+					In every industry, score has power...
+					</h2>
+					<p class="industry-logos">
+					<img src="../assets/images/web-google.jpg" alt="Web - Google">
+					<img src="../assets/images/credit-fico.jpg" alt="Credit - FICO">
+					<img src="../assets/images/social-klout.jpg" alt="Social - Klout">
+					<img src="../assets/images/food-zagat.jpg" alt="Food - Zagat">
+					</p>
+					<h4>
+					Apps are next.
+					</h4>
 					<p>
-					  <a class="btn btn-primary btn-lg" href="">Get your score</a>
+					  <a class="btn-get-appscore btn btn-primary" href="#">Get your appscore</a>
 					</p>
 					<p>
 					Are you a store looking to discover great apps? <a href="">Learn more</a>
@@ -307,25 +337,6 @@
 		</div>
 		</div>
 	</footer>
-	
-	<!-- Modal Windows -->
-	<div class="modal fade video-only" id="xchangeVideo">
-		<div class="modal-dialog">
-			<div class="modal-content">	
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>			
-				<div class="modal-body video-container"></div>				
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	<div class="modal fade video-only" id="marketplaceVideo">
-		<div class="modal-dialog">
-			<div class="modal-content">	
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>			
-				<div class="modal-body video-container"></div>				
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
@@ -335,20 +346,26 @@
 <script>
 //if ( $(window).width() > 979) {
 $(function() {
-$.stellar({
-  horizontalScrolling: false,
-  verticalScrolling: true,
-  horizontalOffset: 0,
-  verticalOffset: 0,
-  responsive: true,
-  scrollProperty: 'scroll',
-  positionProperty: 'position',
-  parallaxBackgrounds: true,
-  parallaxElements: true,
-  hideDistantElements: false
-});
+	$.stellar({
+	  horizontalScrolling: false,
+	  verticalScrolling: true,
+	  horizontalOffset: 0,
+	  verticalOffset: 0,
+	  responsive: true,
+	  scrollProperty: 'scroll',
+	  positionProperty: 'position',
+	  parallaxBackgrounds: true,
+	  parallaxElements: true,
+	  hideDistantElements: false
+	});
 });
 //}
+$(function() {
+	$('.btn-get-appscore').click(function() {
+	    $('#app_search').focus();
+    });
+});
+
 </script>
 
 <script>

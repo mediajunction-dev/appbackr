@@ -1583,6 +1583,7 @@ blockquote small {
   padding-bottom: 2.5em;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right bottom;
   background-color: #222222;
   background-attachment: fixed;
 }
@@ -3106,55 +3107,23 @@ td.status-notlive {
   left: 0;
   display: table;
 }
-.appscore {
-  margin-top: 120px;
-}
 .appscore .billboard {
-  min-height: 39.375em;
-}
-.appscore .billboard,
-.appscore .featured-faq {
-  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center top;
-}
-.appscore .billboard .billboard-content,
-.appscore .billboard .billboard-content h1,
-.appscore .billboard .billboard-content h2,
-.appscore .billboard .billboard-content h3,
-.appscore .billboard .billboard-content p {
-  text-align: left;
-}
-.appscore .billboard .billboard-content p {
-  padding: 0;
-}
-.appscore .billboard .billboard-content img {
-  margin-top: 2em;
-}
-.appscore .featured-image-right {
-  margin-top: 1.5em;
-}
-.appscore .section-background-image {
-  background-image: url(../images/fullscreen-girls-using-phone.jpg);
-}
-.appscore .section-background-image h3 {
-  margin-bottom: .3em;
-}
-.xchange .billboard {
   width: 100%;
   height: 45em;
   background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center 15em fixed;
   background-size: cover;
 }
-.xchange .billboard h1 {
+.appscore .billboard h1 {
   font-size: 3.25em;
   font-weight: 300;
   margin-top: 1em;
   line-height: 1.1;
   color: #222222;
 }
-.xchange .billboard h3 {
+.appscore .billboard h3 {
   font-size: 1.35em !important;
 }
-.xchange .billboard .appscore-input {
+.appscore .billboard .appscore-input {
   width: 95% !important;
   font-size: 1.75em !important;
   padding: 22px 0;
@@ -3162,8 +3131,113 @@ td.status-notlive {
   font-weight: 400;
   margin: 1em auto !important;
 }
-.xchange .billboard .vert-content {
+.appscore .billboard .vert-content {
   height: 45em;
+}
+.appscore .featured-faq {
+  padding: 4em 0 6em;
+  border-bottom: 1px solid #ccc;
+  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center top;
+}
+.appscore .section-light-gray {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+@media (min-width: 768px) {
+  .appscore .section-light-gray {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+}
+@media (min-width: 992px) {
+  .appscore .section-light-gray {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1200px) {
+  .appscore .section-light-gray {
+    padding-top: 3.571em;
+    padding-bottom: 3.571em;
+  }
+}
+.appscore .section-light-gray hr {
+  border-bottom: none;
+  border-top-color: #ccc;
+}
+.appscore .what-is-content {
+  font-size: 14px;
+}
+.appscore .what-is-content h2 {
+  font-size: 3em;
+  font-weight: 300;
+}
+.appscore .what-is-content,
+.appscore .what-is-content h1,
+.appscore .what-is-content h2,
+.appscore .what-is-content h3,
+.appscore .what-is-content p {
+  text-align: left;
+}
+.appscore .what-is-content p {
+  padding: 0;
+}
+.appscore .what-is-content img {
+  margin-top: 2em;
+}
+.appscore .featured-image-right {
+  margin-top: 1em;
+}
+.appscore .section-background-image {
+  background-image: url(../images/fullscreen-girls-using-phone.jpg);
+}
+.appscore .section-background-image,
+.appscore .section-background-image .vert-content {
+  height: auto;
+}
+.appscore .section-background-image h3 {
+  font-size: 2em;
+  font-weight: 300;
+  display: block;
+}
+.appscore .section-background-image .span8 h3 {
+  margin-top: 25px;
+}
+.appscore .section-background-image p {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+.appscore .industry-logos img {
+  height: 80px;
+  width: auto;
+  margin: 1.5em !important;
+}
+@media (min-width: 768px) {
+  .appscore .billboard .appscore-input {
+    width: 55% !important;
+  }
+  .appscore .section-background-image,
+  .appscore .section-background-image .vert-content {
+    height: 45em;
+  }
+}
+.xchange .billboard {
+  background: #ffffff url(../images/appscore-apps-background.jpg) repeat-x center 30em;
+}
+.xchange .billboard,
+.xchange .billboard .billboard-inner {
+  height: auto;
+}
+.xchange .billboard .billboard-inner {
+  background: url(../images/xchange-scores.png) no-repeat center bottom;
+}
+.xchange .billboard .container {
+  margin-top: 8em;
+}
+.xchange .billboard h1 {
+  font-size: 3em;
+  margin-bottom: .5em;
+  color: #333333;
 }
 .xchange .section-background-image {
   font-size: 13px;
@@ -3244,15 +3318,16 @@ td.status-notlive {
   padding: 0 2em !important;
 }
 @media (min-width: 768px) {
-  .xchange .billboard .appscore-input {
-    width: 55% !important;
+  .xchange .billboard,
+  .xchange .billboard .billboard-inner {
+    height: 45em;
   }
   .xchange .section-background-image {
     font-size: 18px;
   }
   .xchange .section-background-image,
   .xchange .section-background-image .vert-content {
-    height: 35em;
+    height: 45em;
   }
   .xchange .section-background-image .vert-content {
     padding: 0;
@@ -3264,55 +3339,63 @@ td.status-notlive {
     margin: 90% 0 0;
   }
 }
-.xchange .score-result {
-  height: 35em !important;
-  height: auto;
-  margin-top: 50px !important;
-}
+.xchange .score-result,
 .xchange .score-result .vert-content {
-  height: 35em;
+  height: auto !important;
+}
+.xchange .score-result .container {
+  margin-top: 120px !important;
 }
 .xchange .score-result h2 {
   font-size: 2.5em;
   margin-bottom: .5em;
 }
 .xchange .appscore-feature {
-  width: 30em;
-  min-width: 30em;
+  width: auto;
   margin: 0 auto;
+}
+.xchange .appscore-feature .app-detail {
+  margin-top: 1em;
+  padding: 1em;
   border: 2px solid #ddd;
-  border-radius: 3px;
+  border-radius: 6px;
   background-color: #fff;
   *zoom: 1;
 }
-.xchange .appscore-feature:before,
-.xchange .appscore-feature:after {
+.xchange .appscore-feature .app-detail:before,
+.xchange .appscore-feature .app-detail:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.xchange .appscore-feature:after {
+.xchange .appscore-feature .app-detail:after {
   clear: both;
 }
-.xchange .appscore-feature .app-detail,
-.xchange .appscore-feature .score-info {
-  padding: 1.25em;
-}
-.xchange .appscore-feature .app-detail {
-  width: 60%;
+.xchange .appscore-feature .app-name,
+.xchange .appscore-feature .app-icon {
   float: left;
 }
-.xchange .appscore-feature .app-detail .app-icon {
-  display: inline-block;
+.xchange .appscore-feature .app-icon {
+  margin-right: 20px;
 }
-.xchange .appscore-feature .app-detail h2 {
+.xchange .appscore-feature .app-name {
+  width: 60%;
+}
+.xchange .appscore-feature h2.app-name {
   display: inline-block;
-  font-size: 1.75em !important;
+  font-size: 1.5em !important;
   color: #fb7200;
   font-weight: 400;
   text-align: left;
+  margin-top: -5px !important;
 }
-.xchange .appscore-feature .app-detail h2 small {
+.xchange .appscore-feature h2.app-name span {
+  display: block;
+  font-size: 75%;
+  color: #222222;
+  margin: 8px 0;
+}
+.xchange .appscore-feature h2.app-name small {
   display: block;
   font-size: 55%;
   letter-spacing: .08em;
@@ -3320,10 +3403,40 @@ td.status-notlive {
   text-transform: uppercase;
   font-weight: 600;
 }
+.xchange .appscore-feature .app-icon-lg {
+  font-size: 30px;
+}
+.xchange .appscore-feature .app-score-lg {
+  padding: 1em;
+  text-align: center;
+}
+.xchange .appscore-feature .app-score-lg .app-icon-lg {
+  font-size: 45px;
+}
 .xchange .appscore-feature .score-info {
-  width: 20%;
-  float: right;
-  border-left: 2px solid #ddd;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .xchange .score-result,
+  .xchange .score-result .vert-content {
+    height: 45em !important;
+  }
+  .xchange .score-result .container {
+    margin-top: 100px !important;
+  }
+  .xchange .appscore-feature {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .xchange .appscore-feature .app-icon-lg {
+    font-size: 50px;
+  }
+  .xchange .appscore-feature .app-score-lg {
+    text-align: left;
+  }
+  .xchange .appscore-feature .app-score-lg .app-icon-lg {
+    font-size: 63px;
+  }
 }
 .landing-page {
   padding-top: 6em;
