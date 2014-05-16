@@ -457,6 +457,13 @@ form h2 {
 form h2 small {
   display: block;
 }
+form .error {
+  border-color: #e14a59 !important;
+  color: #d52335 !important;
+}
+form .alert {
+  clear: both;
+}
 .features-section {
   padding: 2em 0 !important;
 }

@@ -44,12 +44,20 @@
 		<div class="login-inner">
 			<h4>Create an appbackr account</h4>
 			<form class="login-form">
-				<input type="text" class="input-first-name" name="SignUpForm[first_name]" id="SignUpForm_first_name" maxlength="255" placeholder="First Name*" value="" required="required">
-				<input type="text" class="input-last-name" name="SignUpForm[last_name]" id="SignUpForm_last_name" maxlength="255" placeholder="Last Name*" value="" required="required">
-				<input type="text" class="input-email" name="SignUpForm[email_address]" id="SignUpForm_email_address" placeholder="Email*" required="required">
+				<input type="text" class="input-first-name" name="SignUpForm[first_name]" id="SignUpForm_first_name" maxlength="255" placeholder="First Name*" value="" required="required">				
+				<input type="text" class="input-last-name" name="SignUpForm[last_name]" id="SignUpForm_last_name" maxlength="255" placeholder="Last Name*" value="" required="required">				
+				<input type="text" class="input-email error" name="SignUpForm[email_address]" id="SignUpForm_email_address" placeholder="Email*" required="required">
+				<div class="alert alert-danger alert-dismissable" style="clear:both;">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					This is not an email address
+				</div>
 				<input type="password" class="input-password" name="SignUpForm[tempPassword]" id="SignUpForm_tempPassword" placeholder="Password*" maxlength="64" required="required">				
-				<input type="password" class="input-confirm-password" name="SignUpForm[verifyPassword]" id="SignUpForm_verifyPassword" placeholder="Confirm Password*" required="required">
+				<input type="password" class="input-confirm-password error" name="SignUpForm[verifyPassword]" id="SignUpForm_verifyPassword" placeholder="Confirm Password*" required="required">
 				<div class="help-block">Password must be a minimum 6 characters</div>
+				<div class="alert alert-danger alert-dismissable" style="clear:both;">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					Password does not match
+				</div>
 				<hr>
 				<label class="checkbox" for="SignUpForm_subscribe_email">
 					<input id="ytSignUpForm_subscribe_email" type="hidden" value="0" name="SignUpForm[subscribe_email]">
