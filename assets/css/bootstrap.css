@@ -3590,17 +3590,19 @@ td.status-notlive {
 .amazon-offer #more {
   padding-top: 0 !important;
 }
-.app-list {
+.app-list,
+.app-search-list {
   background: #eee;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
-.app-list .app-list-inner {
-  height: 400px;
+.app-list .app-list-inner,
+.app-search-list .app-list-inner {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-.app-list .app-link {
+.app-list .app-link,
+.app-search-list .app-link {
   display: block;
   padding: 6px;
   border-bottom: 1px solid #ccc;
@@ -3613,38 +3615,73 @@ td.status-notlive {
   transition: 0.2s;
 }
 .app-list .app-link:before,
-.app-list .app-link:after {
+.app-search-list .app-link:before,
+.app-list .app-link:after,
+.app-search-list .app-link:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.app-list .app-link:after {
+.app-list .app-link:after,
+.app-search-list .app-link:after {
   clear: both;
 }
 .app-list .app-link .app-icon,
-.app-list .app-link .app-info {
+.app-search-list .app-link .app-icon,
+.app-list .app-link .app-info,
+.app-search-list .app-link .app-info {
   display: inline-block;
 }
-.app-list .app-link .app-icon {
+.app-list .app-link .app-icon,
+.app-search-list .app-link .app-icon {
   float: left;
   margin-right: 8px;
 }
-.app-list .app-link .app-info {
+.app-list .app-link .app-info,
+.app-search-list .app-link .app-info {
   float: left;
   font-size: 16px;
 }
-.app-list .app-link .app-score-icon {
+.app-list .app-link .app-score-icon,
+.app-search-list .app-link .app-score-icon {
   float: right;
 }
-.app-list .app-link:hover {
+.app-list .app-link:hover,
+.app-search-list .app-link:hover {
   background-color: #eee;
 }
-.app-list .app-link:first-child {
+.app-list .app-link:first-child,
+.app-search-list .app-link:first-child {
   border-radius: 3px 3px 0 0;
 }
-.app-list .app-link:last-child {
+.app-list .app-link:last-child,
+.app-search-list .app-link:last-child {
   border-radius: 0 0 3px 3px;
   border-bottom: none;
+}
+.app-list .app-list-inner {
+  max-height: 300px;
+}
+.app-search-list .module-title form {
+  margin: 10px 0 -10px;
+  position: relative;
+}
+.app-search-list .module-title form input {
+  position: relative;
+  z-index: 0;
+}
+.app-search-list .module-title form button {
+  border: none;
+  padding: 7px 13px;
+  margin: 0;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.app-search-list .app-list-inner {
+  max-height: 210px;
 }
 .app-wall {
   background: #eee;
@@ -6735,7 +6772,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("../images/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -6761,7 +6798,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("../images/glyphicons-halflings-white.png");
 }
 .icon-glass {
   background-position: 0      0;
