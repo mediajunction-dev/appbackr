@@ -1,0 +1,493 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Store Dashboard | appbackr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../assets/js/fonts.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <style type="text/css">
+  h6 {margin:0;}
+  [class^="icon-"], [class*=" icon-"] {margin-top:3px;}
+  .simple-nav {padding-top:15px; margin-bottom:0; border-top:1px solid #ddd;}
+  
+  </style>
+  <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+<!--/ Chart Scripts -->
+</head>
+<body class="account stores">
+	<script src="../assets/js/highcharts.js"></script>
+	<script src="../assets/js/modules/exporting.js"></script>
+	<header class="site-header">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<a href="#touch" class="menu-trigger">
+					<span class="icon-bar icon-bar-top"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="/">appbackr&reg;</a>
+					<div id="main-nav">
+						<ul class="nav">
+							<li><a href="/xchange">Xchange</a></li>
+							<li><a href="/aboutUs">About</a></li>
+							<li><a href="/blog">Blog</a></li>
+						</ul>
+					</div>					
+					<div class="secondary-nav">
+
+						<a class="username" href="/stores/">Amazon</a>
+						<a class="signout" href="/site/login">SIGN OUT</a>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="main">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="crumbs">
+						<ul>
+							<li><a href="/stores/">Account</a></li>
+							<li><a href="/app-performance/">App Performance</a></li>
+							<li class="active"><a href="#">Email Campaigns</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span3 portal-nav">
+					<div class="module module-nav">
+
+						<ul class="nav nav-list">
+						  <li><a href="/stores"><i class="ico-overview"></i>Overview</a></li>
+						  <li class="active">
+						  	<a href="/stores/app-performance.html"><i class="ico-email"></i>Email Campaigns</a>
+						  </li>
+						  <!--
+						  <li><a href="/stores/app-search.html"><i class="ico-search"></i>App Search</a></li>
+						  <li><a href="/stores/carrier-channel.html"><i class="ico-apps"></i>Carrier Channel</a></li>
+						  <li class="divider"></li>
+						  <li><a href="/stores/profile-settings.html"><i class="ico-profile"></i>Profile Settings</a></li>
+						  <li><a href="/stores/payment-settings.html"><i class="ico-payment"></i>Payment Settings</a></li>
+						  -->
+						</ul>
+
+					</div>					
+				</div>
+				<div class="span9 portal-main">					
+					<!-- Account Overview -->
+					<div class="module">						
+						<div class="module-content-columns module-numbers" style="border-top:none; border-radius:3px;">
+							<div class="row-fluid">								
+								<div class="span3 live-apps">
+									<div class="number">
+									1
+									<small>Total Campaigns</small>
+									</div>
+								</div>
+								<div class="span3 opens">
+									<div class="number">
+									31%
+									<small>Avg. Open Rate</small>
+									</div>
+								</div>
+								<div class="span3 clicks">
+									<div class="number">
+									3%
+									<small>Avg. Click Rate</small>
+									</div>
+								</div>
+								<div class="span3 avg-score">
+									<div class="number">
+									0
+									<small>Avg. Appscore</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--/ .module -->
+			
+					<h3 class="orange">Recent Campaigns</h3>
+					<!-- Campaign Detail -->
+					<div class="module campaign-full-detail">
+						<!-- App Simple Info -->
+						<div class="module-title campaign-detail-toggle">							
+							<table class="module-table table-email-campaigns module-table-header-footer module-table-title">								
+								<tbody>
+								<!-- Row -->
+								<tr>
+								<td width="220">
+									Japanese Developer Outreach
+								</td>
+								<td class="large">226528<small>Total Apps</small></td>
+								<td width="100" class="large">66632<small class="green">Contacts</small></td>
+								<td class="large">20.11%<small class="blue">Open Rate</small></td>
+								<td class="large">7,852<small class="purple">Click Rate</small></td>
+								<td>
+									<span class="app-score-icon app-icon-sm"><span>0</span></span>
+								</td>
+								</tr>
+								<!--/ Row -->						
+								</tbody>
+							</table>							
+							<div class="toggle-arrow">
+								&nbsp;
+							</div>
+						</div>
+						<!-- App Full Info -->
+						<div class="campaign-detail-collapse">
+							<div class="campaign-detail-inner">								
+								<!-- Module Content -->
+								<div class="module-content" style="border-top:1px solid #ccc;">
+									<!-- Details -->
+									<div class="row-fluid" style="margin-bottom:0;">
+										<div class="span8">
+											<h6>Subject</h6>
+											<p>
+											Amazon Androidアプリストアで、世界中のお客様にアプリをお届けしましょう
+											</p>						
+										</div>
+										<div class="span4">
+											<h6>Outreach</h6>
+											<p>
+											May 15, 2014 18:00 PDT
+											</p>
+										</div>								
+									</div>							
+									<div class="row-fluid">
+										<div class="span12">
+											<p class="simple-nav">
+												<a class="btn btn-default" href="#"><i class="icon-envelope"></i> View Email</a>
+												<a class="btn btn-default" href="#"><i class="icon-file"></i> Export Report</a>
+											</p>
+										</div>
+									</div>
+									<!--/ Details -->
+									<hr>
+									<!-- Opens -->
+									<h4 class="blue">Opens</h4>							
+									<table class="module-table table-email-campaigns">
+										<thead>
+											<tr>
+											<th>Emails Sent</th>
+											<th>Total Opens</th>
+											<th>Open Rate</th>
+											<th>Unique Opens</th>
+											<th>Appscore</th>								
+											</tr>
+										</thead>
+										<tbody>
+										<!-- Row -->
+										<tr>
+										<td class="large">2554</td>
+										<td class="large"></td>
+										<td class="large"></td>
+										<td class="large"></td>
+										<td>
+											<span class="app-score-icon app-icon-sm"><span>0</span></span>
+										</td>
+										</tr>
+										<!--/ Row -->						
+										</tbody>
+									</table>								
+									<div class="row-fluid row-list" style="margin-bottom:0;">
+										<div class="span6">
+											<h6 class="blue">Open By Appscore</h6>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												9.5 - 10
+												</div>
+												<div class="span6">
+												57.9%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												9.0 - 9.4
+												</div>
+												<div class="span6">
+												41.7%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												8.5 - 8.9
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												&nbsp;
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												&nbsp;
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+										</div>
+										<div class="span6">
+											<h6 class="blue">Open By Location</h6>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/Japan.png" width="25"> Japan
+												</div>
+												<div class="span6">
+												57.9%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/United_States_of_America.png" width="25"> USA
+												</div>
+												<div class="span6">
+												41.7%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/China.png" width="25"> China
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/China.png" width="25"> Hong Kong
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/Vietnam.png" width="25"> Vietnam
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+										</div>								
+									</div>
+									<!--/ Opens -->														
+									<hr>
+									<!-- Clicks -->
+									<h4 class="purple">Clicks</h4>
+									<table class="module-table table-email-campaigns">
+										<thead>
+											<tr>
+											<th>Landing Pages</th>
+											<th>Links</th>
+											<th>Total Clicks</th>
+											<th>Click Rate</th>
+											<th>Appscore</th>								
+											</tr>
+										</thead>
+										<tbody>
+										<!-- Row -->
+										<tr>
+										<td class="large">2554</td>
+										<td class="large"></td>
+										<td class="large"></td>
+										<td class="large"></td>
+										<td>
+											<span class="app-score-icon app-icon-sm"><span>0</span></span>
+										</td>
+										</tr>
+										<!--/ Row -->						
+										</tbody>
+									</table>						
+									<div class="row-fluid row-list" style="margin-bottom:0;">
+										<div class="span6">
+											<h6 class="purple">Clicks By Appscore</h6>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												9.5 - 10
+												</div>
+												<div class="span6">
+												57.9%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												9.0 - 9.4
+												</div>
+												<div class="span6">
+												41.7%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												8.5 - 8.9
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												&nbsp;
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6 orange">
+												&nbsp;
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+										</div>
+										<div class="span6">
+											<h6 class="purple">Clicks By Location</h6>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/Japan.png" width="25"> Japan
+												</div>
+												<div class="span6">
+												57.9%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/United_States_of_America.png" width="25"> USA
+												</div>
+												<div class="span6">
+												41.7%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/China.png" width="25"> China
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/China.png" width="25"> Hong Kong
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span6">
+												<img src="../assets/ui-images/flags/Vietnam.png" width="25"> Vietnam
+												</div>
+												<div class="span6">
+												0.1%
+												</div>
+											</div>
+										</div>								
+									</div>
+									<br>
+									<table class="module-table table-email-campaigns">
+										<thead>
+											<tr>
+											<th>Page</th>
+											<th>Appbackr URL</th>
+											<th>Anchor</th>
+											<th>Clicks</th>
+											<th>Percentage</th>								
+											</tr>
+										</thead>
+										<tbody>
+										<!-- Row -->
+										<tr>
+										<td>page meta title</td>
+										<td>appbackr link</td>
+										<td>anchor text or image</td>
+										<td># of clicks</td>
+										<td>% of total clicks</td>
+										</tr>
+										<!--/ Row -->						
+										</tbody>
+									</table>	
+									<!--/ Clicks -->
+																						
+								</div>
+							</div>
+						</div><!--/ .app-detail-collapse -->						
+					</div><!--/ .module -->
+					
+					
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!-- Site Footer -->
+	<footer class="site-footer">
+		<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				<ul class="nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="/xchange">Xchange</a></li>
+					<li><a href="/aboutUs">About</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/press">Press</a></li>
+					<li><a href="/aboutUs">Contact</a></li>
+					<li><a href="/marketplace">Marketplace</a></li>
+				</ul>
+				<p class="social">
+					<a class="facebook" href="http://www.facebook.com/appbackr" target="_blank"></a>
+					<a class="twitter" href="http://www.twitter.com/appbackr" target="_blank"></a>
+					<a class="googleplus" href="" target="_blank"></a>
+					<a class="linkedin" href="" target="_blank"></a>
+					<a class="youtube" href="http://www.youtube.com/appbackr" target="_blank"></a>
+				</p>
+				<p class="copyright">
+				&copy;2013 appbackr&reg; inc. <a href="http://www.appbackr.com/documents/appbackr_Terms_of_Use_effective_as_of_05-11-2012_v2.pdf" target="_blank">Terms of Use</a> <a href="http://privacy-policy.truste.com/verified-policy/www.appbackr.com" target="_blank">Privacy Policy</a>
+				</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+	
+
+<script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="../assets/js/plugins.min.js"></script>
+<script src="../assets/js/portal.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(".campaign-detail-toggle").each(function(){
+		$(this).click(function(){
+			$(this).toggleClass('active');
+			$(this).next(".campaign-detail-collapse").slideToggle('fast');			
+		});
+	});	
+});
+</script>
+
+<script>
+var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>

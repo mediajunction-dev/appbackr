@@ -495,7 +495,8 @@ h3.alignCenter,
 h4.alignCenter,
 h5.alignCenter,
 h6.alignCenter,
-p.alignCenter {
+p.alignCenter,
+small.alignCenter {
   text-align: center;
 }
 h1.orange,
@@ -505,14 +506,70 @@ h4.orange,
 h5.orange,
 h6.orange,
 p.orange,
+small.orange,
 h1.orange a,
 h2.orange a,
 h3.orange a,
 h4.orange a,
 h5.orange a,
 h6.orange a,
-p.orange a {
-  color: #fb7200;
+p.orange a,
+small.orange a {
+  color: #fb7200 !important;
+}
+h1.blue,
+h2.blue,
+h3.blue,
+h4.blue,
+h5.blue,
+h6.blue,
+p.blue,
+small.blue,
+h1.blue a,
+h2.blue a,
+h3.blue a,
+h4.blue a,
+h5.blue a,
+h6.blue a,
+p.blue a,
+small.blue a {
+  color: #26a2fb !important;
+}
+h1.green,
+h2.green,
+h3.green,
+h4.green,
+h5.green,
+h6.green,
+p.green,
+small.green,
+h1.green a,
+h2.green a,
+h3.green a,
+h4.green a,
+h5.green a,
+h6.green a,
+p.green a,
+small.green a {
+  color: #3eae3e !important;
+}
+h1.purple,
+h2.purple,
+h3.purple,
+h4.purple,
+h5.purple,
+h6.purple,
+p.purple,
+small.purple,
+h1.purple a,
+h2.purple a,
+h3.purple a,
+h4.purple a,
+h5.purple a,
+h6.purple a,
+p.purple a,
+small.purple a {
+  color: #7a43b6 !important;
 }
 h1,
 h2,
@@ -577,6 +634,29 @@ p.featured-logos img {
 }
 .on-dark p.download {
   border-top-color: #50606c;
+}
+.row-list > .span6 {
+  width: 49% !important;
+  margin: 0 !important;
+  float: left !important;
+  border-radius: 3px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.row-list > .span6 .orange {
+  color: #fb7200;
+  font-weight: bold;
+}
+.row-list > .span6:last-child {
+  float: right !important;
+}
+.row-list > .span6 .span6:last-child {
+  text-align: right;
+}
+.row-list .span6 .row-fluid {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0;
+  margin-top: 5px;
 }
 ul.feature-list {
   text-align: left;
@@ -1930,6 +2010,11 @@ blockquote small {
   float: right;
   margin: 0;
 }
+.module-title.secondary-module-title {
+  border-top: 1px solid #ccc;
+  border-radius: 0;
+  background-color: #fff;
+}
 .module-content {
   *zoom: 1;
 }
@@ -2205,6 +2290,15 @@ blockquote small {
   position: relative;
   top: -2px;
 }
+.module-table td small {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #818485;
+  font-weight: 700;
+  line-height: normal;
+  margin: 5px 0 0;
+}
 .module-table .app-icon {
   margin: 0 10px 0 0;
 }
@@ -2230,6 +2324,15 @@ blockquote small {
 .module-table.module-table-sm td,
 .module-table.module-table-sm th {
   padding: 10px !important;
+}
+.module-table.secondary-table {
+  border-top: 1px solid #ccc !important;
+}
+.module-table.secondary-table th {
+  background: #fff !important;
+}
+.module-table.module-table-title {
+  margin: -15px;
 }
 .campaign-link {
   text-decoration: none;
@@ -2312,31 +2415,39 @@ blockquote small {
 .revenue .number small,
 .live-apps .number small,
 .total-campaigns .number small,
+.green .number small,
 td.delivered,
-td.status-live {
+td.status-live,
+td.green {
   color: #3eae3e;
 }
 .downloads .number small,
 .installs .number small,
 .opens .number small,
 .apps-contacted .number small,
+.blue .number small,
 td.opens,
-td.apps-contacted {
+td.apps-contacted,
+td.blue {
   color: #26a2fb;
 }
 .avg-score .number small,
+.orange .number small,
 td.avg-score,
-td.status-pending {
+td.status-pending,
+td.orange {
   color: #fb7200;
 }
 .earnings .number small,
 .clicks .number small,
 .apps-submitted small,
 td.clicks,
-td.apps-submitted {
+td.apps-submitted,
+td.purple {
   color: #7a43b6;
 }
-td.status-notlive {
+td.status-notlive,
+td.red {
   color: #d52335;
 }
 .module-charts {
@@ -2773,6 +2884,66 @@ td.status-notlive {
 }
 .app-full-detail.verification-needed .app-detail-collapse {
   display: none !important;
+}
+.campaign-full-detail {
+  margin-bottom: .75em;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+}
+.campaign-full-detail:hover {
+  border-color: #999;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  top: -2px;
+}
+.campaign-full-detail .campaign-detail-toggle {
+  cursor: pointer;
+  border-radius: 4px;
+  border-bottom-color: transparent;
+  padding-right: 30px;
+}
+.campaign-full-detail .campaign-detail-toggle .toggle-arrow {
+  height: 100%;
+  padding: 0 20px 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.campaign-full-detail .campaign-detail-toggle .toggle-arrow {
+  border-left: 1px solid #ccc;
+  background: #cccccc url(../ui-images/arrow-collapse-down.png) no-repeat center center;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.campaign-full-detail .campaign-detail-toggle .toggle-arrow:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.campaign-full-detail .campaign-detail-toggle.active {
+  border-radius: 4px 4px 0 0;
+  border-bottom-color: #ccc;
+}
+.campaign-full-detail .campaign-detail-toggle.active .toggle-arrow {
+  background-color: transparent;
+  background-image: url(../ui-images/arrow-collapse-up.png);
+}
+.campaign-full-detail .campaign-detail-collapse {
+  display: none;
+}
+.campaign-full-detail .campaign-detail-columns {
+  padding: 1em 1em 0;
+}
+.campaign-full-detail .campaign-detail-columns p {
+  border-bottom: 1px solid #eeeeee;
+  margin: 0 0 .75em;
+  padding-bottom: .5em;
+}
+.campaign-full-detail table td {
+  vertical-align: top;
 }
 .account-type {
   padding: 10px 20px 24px;
@@ -6762,6 +6933,10 @@ table th[class*="span"],
 .ico-apps,
 .sidr-class-ico-apps {
   background-position: -1px -119px;
+}
+.ico-email,
+.sidr-class-ico-email {
+  background-position: -1px -135px;
 }
 [class^="icon-"],
 [class*=" icon-"],
