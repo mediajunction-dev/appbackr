@@ -3811,11 +3811,14 @@ td.red {
 .app-list .app-link .app-info,
 .app-search-list .app-link .app-info {
   float: left;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.1;
+  width: 50%;
 }
 .app-list .app-link .app-score-icon,
 .app-search-list .app-link .app-score-icon {
-  float: right;
+  position: absolute;
+  right: 6px;
 }
 .app-list .app-link:hover,
 .app-search-list .app-link:hover {
@@ -3830,6 +3833,13 @@ td.red {
   border-radius: 0 0 3px 3px;
   border-bottom: none;
 }
+@media (min-width: 992px) {
+  .app-list .app-link .app-info,
+  .app-search-list .app-link .app-info {
+    font-size: 15px;
+    width: 60%;
+  }
+}
 .app-list .app-list-inner {
   max-height: 300px;
 }
@@ -3838,6 +3848,7 @@ td.red {
   position: relative;
 }
 .app-search-list .module-title form input {
+  width: 90%;
   position: relative;
   z-index: 0;
 }
