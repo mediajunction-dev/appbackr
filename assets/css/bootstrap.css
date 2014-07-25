@@ -257,7 +257,8 @@ a:hover .img-polaroid {
   color: #26a2fb !important;
 }
 a.btn-primary,
-a.btn-success {
+a.btn-success,
+a.btn-default.btn-large {
   padding: 0 24px;
   margin: 0 0 .875em;
   -webkit-transition: 0.3s;
@@ -764,6 +765,43 @@ ul.steps .active span.step-label {
   display: block;
   text-align: center;
 }
+ul.step-list {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+ul.step-list li {
+  padding-top: 50px;
+  position: relative;
+  margin-bottom: 1.65em;
+  line-height: 1.5 !important;
+}
+ul.step-list li .step {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border: 4px solid #fb7200;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #fb7200;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  ul.step-list li {
+    padding-left: 65px;
+    padding-top: 0;
+  }
+}
 ul.steps-full {
   margin-left: -2% !important;
   margin-right: -2% !important;
@@ -878,7 +916,7 @@ blockquote small {
   height: 30px;
   overflow: hidden;
   border-bottom: 1px solid #ccc;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 12;
@@ -915,7 +953,7 @@ blockquote small {
   height: 50px;
   padding: 30px 0;
   position: fixed;
-  top: 31px;
+  top: 30px;
   right: 0;
   z-index: 12;
   -webkit-transition: 0.3s ease-out;
@@ -1064,6 +1102,7 @@ blockquote small {
   padding: 1.5em 0;
   top: 0 !important;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 0;
 }
 .menu-trigger {
   display: none;
@@ -2341,6 +2380,11 @@ blockquote small {
 .module-table.module-table-title {
   margin: -15px;
 }
+@media (min-width: 768px) {
+  .module-table .pad-adjust {
+    padding-right: 65px !important;
+  }
+}
 .campaign-link {
   text-decoration: none;
 }
@@ -2884,8 +2928,8 @@ td.red {
   padding: 5px 10px 3px;
   background-color: #fff;
   border-radius: 0 50px 50px 0;
-  top: 16px;
-  right: 0;
+  top: 24px;
+  right: 2px;
   position: relative;
   border-left: 1px solid #ccc;
 }
@@ -2951,6 +2995,37 @@ td.red {
 }
 .campaign-full-detail table td {
   vertical-align: top;
+}
+.campaign-table-collapse {
+  overflow: hidden;
+}
+.campaign-table-collapse:hover {
+  border-color: #ccc;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+  top: 0;
+}
+.campaign-table-collapse .module-title {
+  background-color: #fff;
+}
+.campaign-table-collapse .module-table-header {
+  border-radius: 4px 4px 0 0;
+  background-color: #f7f7f7;
+}
+.campaign-table-collapse .module-table-header-footer {
+  border-radius: 0;
+}
+.campaign-table-collapse .campaign-detail-collapse {
+  background-color: #f6f6f6;
+  border-radius: 0;
+}
+.campaign-table-collapse .campaign-detail-toggle {
+  border-top: 1px solid #ccc !important;
+  border-radius: 0 !important;
+}
+.campaign-table-collapse .campaign-detail-toggle:last-child {
+  border-top: 0 !important;
 }
 .account-type {
   padding: 10px 20px 24px;
@@ -3627,6 +3702,156 @@ td.red {
   .xchange .appscore-feature .app-score-lg .app-icon-lg {
     font-size: 63px;
   }
+}
+.mozilla .billboard,
+.samsung .billboard {
+  width: 100%;
+  height: 45em;
+  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center 15em fixed;
+  background-size: cover;
+}
+.mozilla .billboard .billboard-content,
+.samsung .billboard .billboard-content {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.mozilla .billboard h1,
+.samsung .billboard h1,
+.mozilla .billboard h3,
+.samsung .billboard h3,
+.mozilla .billboard h2,
+.samsung .billboard h2,
+.mozilla .billboard h4,
+.samsung .billboard h4,
+.mozilla .billboard h5,
+.samsung .billboard h5,
+.mozilla .billboard h6,
+.samsung .billboard h6,
+.mozilla .billboard p,
+.samsung .billboard p {
+  text-align: left;
+  padding-left: 0;
+}
+.mozilla .billboard h1,
+.samsung .billboard h1 {
+  font-size: 2.87em;
+  font-weight: 300;
+  margin-top: 1em;
+  line-height: 1.1;
+  color: #222222;
+}
+.mozilla .billboard h3,
+.samsung .billboard h3 {
+  font-size: 1.35em !important;
+}
+.mozilla .billboard .vert-content,
+.samsung .billboard .vert-content {
+  height: 45em;
+}
+.mozilla .section-background-image,
+.samsung .section-background-image {
+  font-size: 13px;
+}
+.mozilla .section-background-image,
+.samsung .section-background-image,
+.mozilla .section-background-image .vert-content,
+.samsung .section-background-image .vert-content {
+  height: auto;
+}
+.mozilla .section-background-image .vert-content,
+.samsung .section-background-image .vert-content {
+  padding: 2em 0;
+}
+.mozilla .section-background-image small,
+.samsung .section-background-image small {
+  margin: 0 auto;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fb7200;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999999;
+}
+.mozilla .section-background-image h2,
+.samsung .section-background-image h2,
+.mozilla .section-background-image h3,
+.samsung .section-background-image h3,
+.mozilla .section-background-image h4,
+.samsung .section-background-image h4,
+.mozilla .section-background-image h5,
+.samsung .section-background-image h5,
+.mozilla .section-background-image h6,
+.samsung .section-background-image h6,
+.mozilla .section-background-image p,
+.samsung .section-background-image p {
+  text-align: center;
+}
+.mozilla .section-background-image hr,
+.samsung .section-background-image hr {
+  margin: 25px auto 20px;
+  border-bottom-color: #999999;
+  border-top: none;
+}
+.mozilla .section-background-image h2,
+.samsung .section-background-image h2 {
+  line-height: 1.1;
+}
+.mozilla .section-background-image h3,
+.samsung .section-background-image h3 {
+  font-size: 1.25em;
+}
+.mozilla .section-background-image p,
+.samsung .section-background-image p {
+  font-size: 1em;
+  padding: 0 10%;
+  color: #ccc;
+  font-weight: 300;
+}
+.mozilla .section-what-is-appscore,
+.samsung .section-what-is-appscore {
+  background-image: url(../images/fullscreen-device-closeup.jpg);
+}
+.mozilla .section-what-is-appscore h3,
+.samsung .section-what-is-appscore h3 {
+  color: #ffffff;
+}
+.mozilla .featured-faq,
+.samsung .featured-faq {
+  padding: 4em 0 6em;
+  border-bottom: 1px solid #ccc;
+  background: #ffffff url(../images/appscore-apps-background.jpg) no-repeat center top;
+}
+@media (min-width: 768px) {
+  .mozilla .section-background-image,
+  .samsung .section-background-image {
+    font-size: 18px;
+  }
+  .mozilla .section-background-image,
+  .samsung .section-background-image,
+  .mozilla .section-background-image .vert-content,
+  .samsung .section-background-image .vert-content {
+    height: 45em;
+  }
+  .mozilla .section-background-image .vert-content,
+  .samsung .section-background-image .vert-content {
+    padding: 0;
+  }
+}
+.samsung .billboard {
+  height: auto;
+  padding-top: 8em;
+}
+.samsung .billboard h1,
+.samsung .billboard h2 {
+  margin-top: 0;
+}
+.samsung .billboard h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+.samsung .billboard .billboard-second-row {
+  padding: 3.5em 0;
 }
 .tizen .email-signup-form {
   width: 70%;
