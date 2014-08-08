@@ -1,0 +1,264 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Create a Campaign| appbackr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../assets/js/fonts.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+<body class="account offer-workflow">
+	<header class="site-header">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<a href="#touch" class="menu-trigger">
+					<span class="icon-bar icon-bar-top"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="/">appbackr&reg;</a>
+					<div id="main-nav"></div>					
+					<div class="secondary-nav">
+						<div class="notification success">
+							<a href="/account/opportunities.html">3 New Offers!</a>
+						</div>						
+						<a class="username" href="/account/">Bob Blahblah</a>
+						<a class="signout" href="/site/login">SIGN OUT</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="main">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="crumbs">
+						<ul>
+							<li><a href="/account/">Account</a></li>
+							<li class="active"><a href="#">Create a Campaign</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span3 portal-nav">
+					<div class="module module-nav">
+
+						<ul class="nav nav-list">
+						  <li><a href="/stores"><i class="ico-overview"></i>Overview</a></li>
+						  <li>
+						  	<a href="/stores/app-performance.html"><i class="ico-performance"></i>App Performance</a>
+						  	<ul>
+						  		<li><a href="/stores/app-performance.html">Feature Campaigns</a></li>
+						  		<li><a href="/stores/email-campaigns.html">Email Campaigns</a></li>
+						  		<li><a href="/stores/sourcing-campaigns.html">Sourcing Campaigns</a></li>
+						  		<li><a href="/stores/create-campaign.html">Create a Campaign</a></li>
+						  	</ul>
+						  </li>
+						  <li class="active">
+						  	<a href="/stores/app-search.html"><i class="ico-search"></i>App Search</a>
+						  	<ul>
+						  		<li class="active"><a href="/stores/create-campaign.html">Create a Campaign</a></li>
+						  	</ul>
+						  </li>
+						  <li><a href="/stores/carrier-channel.html"><i class="ico-apps"></i>Carrier Channel</a></li>						  
+						</ul>
+
+					</div>					
+				</div>
+				<div class="span9 portal-main">						
+					<div class="tab-pane" id="upload">
+					<form class="module-form">					
+					<div class="row-fluid">						
+						<div class="span4 help-column">
+							<h3>Campaign Information</h3>
+							<p>
+							Populate this area with helper text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+							</p>
+						</div>
+						<div class="span8">
+							<div class="row-fluid">
+								<div class="span6">
+									<label for="campaign_title">Campaign Title</label>
+									<input type="text" name="campaign_title">
+								</div>
+								<div class="span6">
+									<label for="seller_name">Platform</label>
+									<label class="radio-inline">
+									  <input type="radio" name="platform_itunes" id="platform_itunes" value="Apple App Store"> Apple App Store
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="platform_play" id="platform_play" value="Google Play"> Google Play
+									</label>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span6">
+									<label for="campaign_date">Date of Outreach</label>
+									<div class="row-fluid">
+										<div class="span6">
+											<input type="text" name="campaign_date" placeholder="Date">
+										</div>
+										<div class="span6">
+											<input type="text" name="campaign_time" placeholder="Time">
+										</div>
+									</div>
+								</div>
+								<div class="span6">
+									<label>Outreach Method</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" name="outreach_email" id="outreach_email" value="Email"> Email
+									</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" name="outreach_cross_platform" id="outreach_cross_platform" value="Cross Platform"> Cross Platform
+									</label>									
+								</div>																
+							</div>
+							<div id="cp-options" class="check-toggle-box">
+								<div class="row-fluid">
+									<div class="span12">
+										<label>Cross Platform Options</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" name="cross_platform_marmalade" id="cross_platform_marmalade" value="Marmalade"> Marmalade
+										</label>	
+										<label class="checkbox-inline">
+										  <input type="checkbox" name="cross_platform_gamesalad" id="cross_platform_gamesalad" value="Gamesalad"> Gamesalad
+										</label>	
+										<label class="checkbox-inline">
+										  <input type="checkbox" name="cross_platform_scirra" id="cross_platform_scirra" value="Scirra"> Scirra
+										</label>
+									</div>
+								</div>
+							</div>							
+							<label for="campaign_notes">Notes <span id="counter"></span></label>
+							<textarea name="campaign_notes" id="campaign_notes"></textarea>
+						</div>
+					</div>					
+					<hr>
+					<div class="row-fluid">
+						<div class="span4 help-column">
+							<h3>Campaign Email</h3>
+							<p>
+							Populate this area with helper text. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+						<div class="span8">
+							<div class="row-fluid">
+								<div class="span8">
+									<label for="campaign_subject">Campaign Subject</label>
+									<input type="text" name="app_title">
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12 short-file-input">
+									<label for="app_title">Email File</label>
+									<input type="file" name="app_title" title="Choose">
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span4">
+									<label for="app_title">Send Test Email</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" name="send_test_yes" id="send_test_yes" value="Yes"> Yes
+									</label>	
+									<label class="checkbox-inline">
+									  <input type="checkbox" name="send_test_no" id="send_test_no" value="No"> No
+									</label>									
+								</div>
+								<div class="span8">
+									<div id="send-test-email" class="check-toggle-box">
+										<label for="send_test_email">Email</label>
+										<input type="email" name="send_test_email">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="module-actions">
+						<a class="btn btn-inverse" href="">Cancel</a>
+						<a class="btn btn-primary" href="">Create Campaign</a>
+					</div>
+					</form>
+					</div><!--/ #upload -->
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!-- Site Footer -->
+	<footer class="site-footer">
+		<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				<ul class="nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="/xchange">Xchange</a></li>
+					<li><a href="/aboutUs">About</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/press">Press</a></li>
+					<li><a href="/aboutUs">Contact</a></li>
+					<li><a href="/marketplace">Marketplace</a></li>
+				</ul>
+				<p class="social">
+					<a class="facebook" href="http://www.facebook.com/appbackr" target="_blank"></a>
+					<a class="twitter" href="http://www.twitter.com/appbackr" target="_blank"></a>
+					<a class="googleplus" href="" target="_blank"></a>
+					<a class="linkedin" href="" target="_blank"></a>
+					<a class="youtube" href="http://www.youtube.com/appbackr" target="_blank"></a>
+				</p>
+				<p class="copyright">
+				&copy;2014 appbackr&reg; inc. <a href="http://www.appbackr.com/documents/appbackr_Terms_of_Use_effective_as_of_05-11-2012_v2.pdf" target="_blank">Terms of Use</a> <a href="http://privacy-policy.truste.com/verified-policy/www.appbackr.com" target="_blank">Privacy Policy</a>
+				</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="../assets/js/plugins.min.js"></script>
+<script src="../assets/js/portal.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var cross_platform;
+	$("#outreach_cross_platform").on("click", function(){
+	    cross_platform = $("#outreach_cross_platform").is(":checked");
+	    if(cross_platform) {
+	        $("#cp-options").addClass("active");	        
+	    } else {
+	        $("#cp-options").removeClass("active");
+	    }
+	}); 
+});
+
+$(function() {
+	var test_email;
+	$("#send_test_yes").on("click", function(){
+	    test_email = $("#send_test_yes").is(":checked");
+	    if(test_email) {
+	        $("#send-test-email").addClass("active");	        
+	    } else {
+	        $("#send-test-email").removeClass("active");
+	    }
+	}); 
+});
+
+</script>
+<script>
+var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>

@@ -2575,7 +2575,7 @@ td.red {
   top: 2px;
 }
 .module-form .file-input-wrapper {
-  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 14px;
   color: #818485;
 }
@@ -2597,6 +2597,42 @@ td.red {
 .module-form input[type="checkbox"] {
   position: relative;
   top: 4px;
+}
+.module-form .radio-inline,
+.module-form .checkbox-inline {
+  display: inline-block;
+  text-transform: none;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.module-form .radio-inline:last-child,
+.module-form .checkbox-inline:last-child {
+  margin-right: 0;
+}
+.module-form .radio-inline input[type="radio"],
+.module-form .checkbox-inline input[type="radio"],
+.module-form .radio-inline input[type="checkbox"],
+.module-form .checkbox-inline input[type="checkbox"] {
+  position: relative;
+  top: -4px;
+  margin-right: 3px;
+}
+.module-form .check-toggle-box {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  height: 1px;
+  overflow: hidden;
+}
+.module-form .check-toggle-box.active {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  height: auto;
+  overflow: visible;
 }
 .module-form select {
   border: 1px solid #ccc;
@@ -2670,6 +2706,7 @@ td.red {
 }
 .module-form .module-actions {
   margin-bottom: -20px;
+  margin-top: 20px;
 }
 .app-performance-form,
 .revenue-chart-form {
