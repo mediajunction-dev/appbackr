@@ -20,15 +20,7 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-	<header class="site-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-				<a class="brand" href="#top">app<strong>backr.org</strong></a>	
-				</div>
-			</div>
-		</div>		
-	</header>
+	<?php include('assets/inc/header.php'); ?>
 	<nav class="side-nav">
 		<div class="vert-content">
 		<div class="vert-content-inner">
@@ -64,7 +56,8 @@
 		<div class="billboard-video-bkg background-image" style="background-image:url(assets/images/billboard-01.jpg)">
 	        <video autoplay loop>
 			<!--<source src="{{ widget.video_ogg_url }}" type="video/ogg">-->
-			<source src="assets/video/stock-footage-male-hands-using-tablet-computer-steadicam-shot.mp4" type="video/mp4">
+			<source src="assets/video/appbackr-org-home-video.mp4" type="video/mp4">
+			<source src="assets/video/appbackr-org-home-video.ogv" type="video/ogg">
 			</video>
 	    </div>
 	</section>
@@ -173,9 +166,7 @@
 			</div>
 		</div>				
 	</section>	
-	<footer class="site-footer">
-		&copy; 2014 appbackr<sup>&reg;</sup> inc. &nbsp;&nbsp; <a href="" target="_blank">Terms of Use</a> &nbsp;&nbsp; <a href="" target="_blank">Privacy Policy</a>
-	</footer>
+	<?php include('assets/inc/footer.php'); ?>
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
