@@ -4,6 +4,8 @@ $( "a#dev-bio" ).click(function() {
   $(".gradientLine").fadeToggle( "fast", "linear" );
   $("nav").toggleClass( "blur");
   $("main").toggleClass( "blur");
+  $("html").toggleClass("disable-scroll");
+  $("body").toggleClass("disable-scroll");
   return false;
 });
 //Sets active state for each tab
