@@ -73,8 +73,11 @@
 					<p style="text-align:center;">
 					This year’s retreat was on Friday, August 22nd at Cavallo Point Lodge, with a dinner the evening before at Murray Circle Restaurant, and ending with a wine reception. The lodge is a spectacular venue, outstanding in every element from rooms to facilities to its breathtaking view of The Golden Gate Bridge.
 					</p>
+					<p>&nbsp;</p>
 					<p style="text-align:center;">
-					The founding purpose of the App Retreat is to allow leaders and innovators within the app economy to have time to engage in great content—and with each other—on the issues that we face on topics around app distribution, discovery and ecosystem development.
+						<a href="#" data-toggle="modal" data-target="#introVideo">
+						<img src="../../assets/images/play-orange.svg">
+						</a>
 					</p>
 				</div>
 			</div>
@@ -87,6 +90,9 @@
 			<div class="row-fluid">
 				<div class="span12">					
 					<h2 class="alignCenter orange">Presentations and Panels</h2>
+					<p style="text-align:center;">
+					The founding purpose of the App Retreat is to allow leaders and innovators within the app economy to have time to engage in great content—and with each other—on the issues that we face on topics around app distribution, discovery and ecosystem development.
+					</p>
 					<p>&nbsp;</p>
 					<hr>
 				</div>
@@ -336,70 +342,44 @@
 				</div>
 			</div>			
 			<div class="row-fluid">
-				<div class="span3">
+				<div class="span4">
 					<div class="video-container">						
 						<!-- Replace image with video embed -->
 						<img src="http://placehold.it/300x225">					
 					</div>
 				</div>
-				<div class="span3">
+				<div class="span4">
 					<div class="video-container">						
 						<!-- Replace image with video embed -->
 						<img src="http://placehold.it/300x225">					
 					</div>
 				</div>
-				<div class="span3">
+				<div class="span4">
 					<div class="video-container">						
 						<!-- Replace image with video embed -->
 						<img src="http://placehold.it/300x225">					
 					</div>
-				</div>
-				<div class="span3">
-					<div class="video-container">						
-						<!-- Replace image with video embed -->
-						<img src="http://placehold.it/300x225">					
-					</div>
-				</div>
+				</div>				
 			</div>
 			<div class="row-fluid">
-				<div class="span3">
+				<div class="span4">
 					<div class="video-container">						
 						<!-- Replace image with video embed -->
 						<img src="http://placehold.it/300x225">					
 					</div>
 				</div>
-				<div class="span3">
+				<div class="span4">
 					<div class="video-container">						
 						<!-- Replace image with video embed -->
 						<img src="http://placehold.it/300x225">					
 					</div>
 				</div>
-				<div class="span3">
+				<div class="span4">
 					<div class="video-container">						
 						<!-- Replace image with video embed -->
 						<img src="http://placehold.it/300x225">					
 					</div>
-				</div>
-				<div class="span3">
-					<div class="video-container">						
-						<!-- Replace image with video embed -->
-						<img src="http://placehold.it/300x225">					
-					</div>
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span3">
-					<div class="video-container">						
-						<!-- Replace image with video embed -->
-						<img src="http://placehold.it/300x225">					
-					</div>
-				</div>
-				<div class="span3">
-					<div class="video-container">						
-						<!-- Replace image with video embed -->
-						<img src="http://placehold.it/300x225">					
-					</div>
-				</div>
+				</div>				
 			</div>
 			
 		</div>
@@ -533,12 +513,33 @@
 		</div>
 	</footer>
 
+<!-- Modal Windows -->
+	<div class="modal fade video-only" id="introVideo">
+		<div class="modal-dialog">
+			<div class="modal-content">	
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>			
+				<div class="modal-body video-container"></div>				
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="../../assets/js/plugins.min.js"></script>
 <script src="../../assets/js/main.min.js"></script>
 <script src="../../assets/js/stellar.min.js"></script>
 <script>
+// Modals
+$(function() {	
+$('#introVideo').on('show', function () {
+	// video iframe goes here ADD THIS >>>> &amp;autohide=1&amp;showinfo=0&amp;autoplay=1 <<<< to the end of your video url	
+  $('#introVideo div.modal-body').html('<iframe width="560" height="315" src="//www.youtube.com/embed/H9_LhBL8d1c?rel=0&amp;autohide=1&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+});
+$('#introVideo').on('hide', function () {
+  $('#introVideo div.modal-body').html('');  
+});
+});
 //if ( $(window).width() > 979) {
 $(function() {
 	$.stellar({
