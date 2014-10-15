@@ -22,3 +22,16 @@ $(function() {
          $(this).carousel('pause');
      });
 });
+
+$(function() {
+	$('.search').click(function(){
+		$(this).toggleClass('active');
+		$('.search-wrapper').toggleClass('active');
+	});
+});
+$(function() {
+	$('.close-btn').click(function(){
+		$('.search').removeClass('active');
+		$('.search-wrapper').removeClass('active');
+	});
+});
