@@ -75,7 +75,7 @@
 					</p>
 					<p>&nbsp;</p>
 					<p style="text-align:center;">
-						<a href="#" data-toggle="modal" data-target="#introVideo">
+						<a href="#" data-toggle="modal" data-target="#introVideo" id="introVideoLink">
 						<img src="../../assets/images/play-orange.svg">
 						</a>
 					</p>
@@ -531,15 +531,18 @@
 <script src="../../assets/js/stellar.min.js"></script>
 <script>
 // Modals
-$(function() {	
-$('#introVideo').on('show', function () {
-	// video iframe goes here ADD THIS >>>> &amp;autohide=1&amp;showinfo=0&amp;autoplay=1 <<<< to the end of your video url	
-  $('#introVideo div.modal-body').html('<iframe width="560" height="315" src="//www.youtube.com/embed/H9_LhBL8d1c?rel=0&amp;autohide=1&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+$('#introVideoLink').on('click', function () {
+	// video iframe goes here ADD THIS >>>> &amp;autohide=1&amp;showinfo=0&amp;autoplay=1 <<<< to the end of your video url		
+	$("#introVideo").modal('show');
+  	$('#introVideo div.modal-body').html('<iframe width="560" height="315" src="//www.youtube.com/embed/H9_LhBL8d1c?rel=0&amp;autohide=1&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+  	return false;
 });
-$('#introVideo').on('hide', function () {
-  $('#introVideo div.modal-body').html('');  
+$('body').on('click','.modal.fade, .close', function () {	
+	$('div.modal-body').html('');  
 });
-});
+
+
+
 //if ( $(window).width() > 979) {
 $(function() {
 	$.stellar({
