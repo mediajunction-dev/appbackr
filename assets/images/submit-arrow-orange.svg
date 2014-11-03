@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="23px" viewBox="0 0 14 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>submit-arrow-orange</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-1071.000000, -3795.000000)" fill="#EC712F">
+            <g id="Group-2" sketch:type="MSLayerGroup" transform="translate(488.000000, 3539.000000)">
+                <path d="M584.224102,277.635783 C584.833348,278.245029 585.818113,278.245029 586.427359,277.635783 L595.776398,268.286744 C596.385644,267.677498 596.385644,266.692733 595.776398,266.083487 L586.427359,256.734448 C586.123515,256.430604 585.724623,256.277903 585.32573,256.277903 C584.926838,256.277903 584.527946,256.430604 584.224102,256.734448 C583.614856,257.343693 583.614856,258.328459 584.224102,258.937704 L592.471513,267.185115 L584.224102,275.432526 C583.614856,276.041772 583.614856,277.026538 584.224102,277.635783" id="submit-arrow-orange" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
