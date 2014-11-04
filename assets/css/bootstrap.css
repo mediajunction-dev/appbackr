@@ -956,10 +956,10 @@ blockquote small {
   top: 30px;
   right: 0;
   z-index: 12;
-  -webkit-transition: 0.3s ease-out;
-  -moz-transition: 0.3s ease-out;
-  -o-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   background: #ffffff;
   /* Logo */
   /*&.header-transition {padding:10px 0 15px; top:-100px;}*/
@@ -971,7 +971,7 @@ blockquote small {
   padding-left: 0 !important;
 }
 .site-header a.brand {
-  width: 220px;
+  width: 135px;
   height: 50px;
   display: block;
   cursor: pointer;
@@ -979,16 +979,16 @@ blockquote small {
   position: absolute;
   left: 30px;
   top: 0;
-  background: url(../images/appbackr-brand.jpg) no-repeat center center;
+  background: url(../images/appbackr-brand.svg) no-repeat center center;
 }
 .site-header #main-nav {
   text-align: left;
   float: left;
-  margin-left: 275px;
+  margin-left: 205px;
 }
 .site-header .nav {
   list-style: none;
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   padding: 0;
   text-align: left;
 }
@@ -1028,7 +1028,7 @@ blockquote small {
   float: right;
   position: relative;
   right: 30px;
-  top: 11px;
+  top: 9px;
 }
 .site-header .secondary-nav .notification {
   margin: 1px 0 0;
@@ -1099,7 +1099,7 @@ blockquote small {
 }
 .site-header.affix {
   position: fixed;
-  padding: 1.5em 0;
+  padding: .75em 0;
   top: 0 !important;
   border-bottom: 1px solid #ccc;
   margin-bottom: 0;
@@ -1438,7 +1438,7 @@ blockquote small {
 }
 #main,
 .main {
-  margin-top: 160px;
+  margin-top: 130px;
 }
 #main .main-content,
 .main .main-content {
