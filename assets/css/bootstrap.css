@@ -5597,10 +5597,25 @@ Print Styles
 }
 .home p {
   margin: 25px 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.7;
   font-weight: 300;
   color: #818485;
+}
+.home p a.btn {
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  .home p a.btn {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .home p a.btn {
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 .home section {
   width: 100%;
@@ -5651,9 +5666,6 @@ Print Styles
 .home section.background-dimmer h2,
 .home section.background-dimmer p {
   color: #fff;
-}
-.home section.background-dimmer p {
-  font-weight: 400;
 }
 .home .email-signup {
   max-width: 624px;
