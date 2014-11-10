@@ -437,7 +437,14 @@ form.form-centered input {
   padding: .875em;
   font-size: 1.125em;
   display: block;
-  width: 96%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-indent: .75em;
+}
+form.form-centered .radio input[type="radio"],
+form.form-centered .checkbox input[type="checkbox"] {
+  margin-bottom: -17px;
 }
 form.form-horizontal input {
   padding: 1.25em .875em;
@@ -4041,7 +4048,7 @@ td.red {
   margin: .5em 1em;
 }
 .landing-page {
-  padding-top: 6em;
+  padding-top: 3em;
 }
 .landing-page .site-header-alt {
   width: 100%;
@@ -4052,6 +4059,21 @@ td.red {
   z-index: 9;
   background: #ffffff;
   border-bottom: 1px solid #ccc;
+}
+.landing-page .site-header-lp {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+}
+.landing-page .site-header-lp svg {
+  display: inline-block;
+  margin: 0 auto;
 }
 .landing-page .section-container {
   margin-bottom: 100px !important;
@@ -4070,11 +4092,29 @@ td.red {
 .landing-page .step-image {
   height: 20em;
 }
+.landing-page.samsung-signup h6 {
+  color: #fb7200;
+}
 .landing-page form#appcelerator2 .btn {
   margin: 5px 0 !important;
 }
 .landing-page form#appcelerator2 .control-label {
   text-align: left;
+}
+.landing-page form fieldset {
+  margin: 2em 0;
+}
+.landing-page form fieldset h5 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.landing-page form fieldset .help-block {
+  font-size: 14px;
+  display: block;
+  margin: 1em 0;
+  font-weight: 400;
+  color: #818485;
 }
 .no-header-footer form {
   padding: 0 40px;
