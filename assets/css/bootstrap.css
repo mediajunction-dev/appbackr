@@ -434,13 +434,21 @@ form.form-centered label {
   margin: 1em 0 .5em;
 }
 form.form-centered input {
-  padding: .875em;
   font-size: 1.125em;
+}
+form.form-centered input[type="text"],
+form.form-centered input[type="email"] {
+  padding: .875em;
   display: block;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
   text-indent: .75em;
+}
+form.form-centered textarea {
+  padding: .875em;
+  font-size: 1.125em;
+  width: 98%;
 }
 form.form-centered .radio input[type="radio"],
 form.form-centered .checkbox input[type="checkbox"] {
@@ -4115,6 +4123,9 @@ td.red {
   margin: 1em 0;
   font-weight: 400;
   color: #818485;
+}
+.landing-page form .list-group {
+  text-align: left;
 }
 .no-header-footer form {
   padding: 0 40px;
