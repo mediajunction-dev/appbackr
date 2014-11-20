@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="25px" viewBox="0 0 13 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>share-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Wall---Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="App-Wall" sketch:type="MSArtboardGroup" transform="translate(-1066.000000, -146.000000)" fill="#818485">
+            <g id="SEARCH" sketch:type="MSLayerGroup" transform="translate(289.000000, 123.000000)">
+                <g id="SHARE" transform="translate(681.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M96.793,30.940087 L99.2759534,30.940087 L99.2759534,28.5277121 C99.2759534,27.4633876 99.3027733,25.8231421 100.074903,24.8068109 C100.889379,23.7311938 102.005932,23 103.928492,23 C107.059356,23 108.377763,23.4460564 108.377763,23.4460564 L107.758084,27.123199 C107.758084,27.123199 106.723402,26.8253575 105.757888,26.8253575 C104.792373,26.8253575 103.928492,27.1711924 103.928492,28.1352954 L103.928492,30.940087 L107.886537,30.940087 L107.609869,34.5311237 L103.928492,34.5311237 L103.928492,47.008 L99.2759534,47.008 L99.2759534,34.5311237 L96.793,34.5311237 L96.793,30.940087" id="share-facebook"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

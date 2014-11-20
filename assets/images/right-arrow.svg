@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="19px" viewBox="0 0 10 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>right-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="appalog-locked" sketch:type="MSArtboardGroup" transform="translate(-1294.000000, -2364.000000)" fill="#231F20">
+            <g id="PHOTOS" sketch:type="MSLayerGroup" transform="translate(289.000000, 2098.000000)">
+                <g id="right-arrow" transform="translate(947.000000, 1.000000)" sketch:type="MSShapeGroup">
+                    <path d="M67.4525,273.795 L59.6675,266.015 C59.2765,265.615 58.6435,265.615 58.2535,266.015 C57.8625,266.405 57.8625,267.035 58.2535,267.425 L65.3325,274.505 L64.3325,275.505 L58.2535,281.585 C57.8625,281.975 57.8625,282.605 58.2535,282.995 C58.4485,283.195 58.7045,283.285 58.9605,283.285 C59.2165,283.285 59.4725,283.195 59.6675,282.995 L67.4525,275.215 C67.5445,275.125 67.6185,275.015 67.6685,274.885 C67.7195,274.765 67.7465,274.635 67.7465,274.505 C67.7465,274.365 67.7195,274.235 67.6685,274.115 C67.6175,273.995 67.5445,273.885 67.4525,273.795 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

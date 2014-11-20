@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="8px" viewBox="0 0 25 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>share-more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Wall---Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="App-Wall" sketch:type="MSArtboardGroup" transform="translate(-1264.000000, -154.000000)" fill="#818485">
+            <g id="SEARCH" sketch:type="MSLayerGroup" transform="translate(289.000000, 123.000000)">
+                <g id="SHARE" transform="translate(681.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M315.374531,31.9124482 C313.444683,31.9124482 311.874531,33.4865361 311.874531,35.4150543 C311.874531,37.3435725 313.444683,38.9124482 315.374531,38.9124482 C317.304379,38.9124482 318.874531,37.3435725 318.874531,35.4150543 C318.874531,33.4865361 317.304379,31.9124482 315.374531,31.9124482 L315.374531,31.9124482 Z M306.437266,31.9124482 C304.507418,31.9124482 302.937266,33.4865361 302.937266,35.4150543 C302.937266,37.3435725 304.507418,38.9124482 306.437266,38.9124482 C308.367635,38.9124482 309.937266,37.3435725 309.937266,35.4150543 C309.937266,33.4865361 308.367635,31.9124482 306.437266,31.9124482 L306.437266,31.9124482 Z M301,35.4150543 C301,33.4865361 299.430252,31.9124482 297.500261,31.9124482 C295.569748,31.9124482 294,33.4865361 294,35.4150543 C294,37.3435725 295.569748,38.9124482 297.500261,38.9124482 C299.430252,38.9124482 301,37.3435725 301,35.4150543 Z" id="share-more"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
