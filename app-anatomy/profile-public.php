@@ -14,6 +14,7 @@
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
 <body class="wiki public">
+	<div class="anatomy-wrapper">
 	<!-- Header -->
 	<?php include('../assets/includes/header.php'); ?>
 	
@@ -99,7 +100,10 @@
 	</div>
 	<!-- Footer -->
 	<?php include('../assets/includes/footer.php'); ?>
-
+	</div><!--/ .anatomy-wrapper -->
+	
+	<!-- Backdrop -->
+	<div class="anatomy-modal-backdrop"></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>

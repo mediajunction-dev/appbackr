@@ -14,6 +14,7 @@
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
 <body class="wiki public">
+	<div class="anatomy-wrapper">
 	<!-- Header -->
 	<?php include('../assets/includes/header.php'); ?>
 	
@@ -34,7 +35,7 @@
 						<div class="vert-content-inner">
 							<div class="group-title">
 								<h1>Group Name Here</h1>
-								<a class="user-profile-link" href="#"><span class="user-profile-image"><img src="../assets/images/user-profile-placeholder.jpg"></span> Keith Miller</a>
+								<a class="user-profile-link" href="profile-public.php"><span class="user-profile-image"><img src="../assets/images/user-profile-placeholder.jpg"></span> Keith Miller</a>
 							</div>							
 							<div class="billboard-actions">
 								<a class="btn-simple btn-simple-share" href="#">SHARE</a>
@@ -86,7 +87,10 @@
 	</div>
 	<!-- Footer -->
 	<?php include('../assets/includes/footer.php'); ?>
-
+	</div><!--/ .anatomy-wrapper -->
+	
+	<!-- Backdrop -->
+	<div class="anatomy-modal-backdrop"></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>

@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
-<body class="wiki logged-in">
+<body class="wiki logged-in edit">
+	<div class="anatomy-wrapper">
 	<!-- Header -->
 	<?php include('../assets/includes/header.php'); ?>
 	
@@ -80,6 +81,7 @@
 	</div><!--/ .grid-billboard-contaienr -->
 	<div class="grid-app-wall">
 		<div class="grid-app-wall-inner">
+			<?php include('../assets/templates/create-group-btn.php'); ?>
 			<?php include('../assets/templates/group-card-template.php'); ?>
 			<?php include('../assets/templates/group-card-template.php'); ?>
 			<?php include('../assets/templates/group-card-template.php'); ?>
@@ -96,13 +98,18 @@
 	</div>
 	<!-- Footer -->
 	<?php include('../assets/includes/footer.php'); ?>
-
+	</div><!--/ .anatomy-wrapper -->
+	
+	<?php include('../assets/actions/create-group.php'); ?>
+	<?php include('../assets/actions/edit-group.php'); ?>
+	<!-- Backdrop -->
+	<div class="anatomy-modal-backdrop"></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="../assets/js/plugins.min.js"></script>
 <script src="../assets/js/main.min.js"></script>
-<script src="../assets/js/wiki-ui.js"></script>
+<script src="../assets/js/wiki-ui.min.js"></script>
 
 <script>
 var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];

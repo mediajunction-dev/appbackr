@@ -23,7 +23,7 @@
 		</div>
 		<!-- Group Actions -->
 		<div class="card-action">
-			<a class="btn-simple btn-simple-edit">Edit</a>
+			<a class="btn-simple btn-simple-edit anatomy-modal-link" name="edit-app">Edit</a>
 		</div>
 	</div><!--/ .group-card-inner -->
 </div><!--/ .group-card -->

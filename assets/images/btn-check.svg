@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="233px" height="226px" viewBox="0 0 233 226" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="33px" height="25px" viewBox="0 0 33 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
     <title>btn-check</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="appalog-unlocked" sketch:type="MSArtboardGroup" transform="translate(-900.000000, -820.000000)"></g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M10.0277504,24.2952565 C10.0368784,24.3066665 10.0494294,24.3066665 10.0585574,24.3180765 C10.0676854,24.3294865 10.0711084,24.3408965 10.0813774,24.3523065 C10.1498375,24.4093566 10.2319896,24.4435866 10.3107186,24.4892267 C10.3529357,24.5120467 10.3883067,24.5462767 10.4316647,24.5690967 C10.5697258,24.6261468 10.714633,24.6489668 10.8606811,24.6489668 C11.0078702,24.6489668 11.1527773,24.6261468 11.2908384,24.5690967 C11.3341965,24.5462767 11.3695675,24.5120467 11.4117845,24.4892267 C11.4905136,24.4435866 11.5726657,24.4093566 11.6411257,24.3523065 C11.6513948,24.3408965 11.6548178,24.3294865 11.6639458,24.3180765 C11.6730738,24.3066665 11.6856248,24.3066665 11.6947528,24.2952565 L32.6229924,1.92022766 C33.0531498,1.46382727 33.0291887,0.744996667 32.5693654,0.311416302 C32.10726,-0.122164063 31.3884294,-0.0993440439 30.95599,0.35705634 L10.8606811,21.8421044 L1.97456561,12.3489764 C1.54212624,11.881166 0.823295637,11.858346 0.361190248,12.2919264 C-0.0986331392,12.7255068 -0.122594159,13.4443374 0.307563203,13.9007377 L10.0277504,24.2952565" id="btn-check" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
     </g>
 </svg>

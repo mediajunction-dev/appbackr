@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
-<body class="wiki logged-in">
+<body class="wiki logged-in edit">
+	<div class="anatomy-wrapper">
 	<!-- Header -->
 	<?php include('../assets/includes/header.php'); ?>
 	
@@ -31,10 +32,10 @@
 						<div class="vert-content-inner">
 							<div class="group-title">
 								<h1>Group Name Here</h1>
-								<a class="user-profile-link" href="#"><span class="user-profile-image"><img src="../assets/images/user-profile-placeholder.jpg"></span> Keith Miller</a>
+								<a class="user-profile-link" href="profile-public.php"><span class="user-profile-image"><img src="../assets/images/user-profile-placeholder.jpg"></span> Keith Miller</a>
 							</div>							
 							<div class="billboard-actions">
-								<a class="btn-simple btn-simple-edit" href="#">EDIT GROUP</a>
+								<a class="btn-simple btn-simple-edit anatomy-modal-link" name="edit-group" href="#">EDIT GROUP</a>
 								<a class="btn-simple btn-simple-share" href="#">SHARE</a>
 							</div>
 						</div>	
@@ -84,13 +85,18 @@
 	</div>
 	<!-- Footer -->
 	<?php include('../assets/includes/footer.php'); ?>
-
+	</div><!--/ .anatomy-wrapper -->
+		
+	<?php include('../assets/actions/edit-app.php'); ?>
+	<?php include('../assets/actions/edit-group.php'); ?>
+	<!-- Backdrop -->
+	<div class="anatomy-modal-backdrop"></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="../assets/js/plugins.min.js"></script>
 <script src="../assets/js/main.min.js"></script>
-<script src="../assets/js/wiki-ui.js"></script>
+<script src="../assets/js/wiki-ui.min.js"></script>
 
 <script>
 var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];

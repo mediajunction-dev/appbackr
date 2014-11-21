@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="226px" height="226px" viewBox="0 0 226 226" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
     <title>btn-close</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Detail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="appalog-unlocked" sketch:type="MSArtboardGroup" transform="translate(-934.000000, -700.000000)"></g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M0.289695437,24.7037037 C0.482331789,24.9012346 0.735228743,25 0.988125698,25 C1.24102265,25 1.49391961,24.9012346 1.68655596,24.7037037 L12.4998765,13.8987654 L23.314185,24.7037037 C23.5068213,24.9012346 23.7597183,25 24.0126152,25 C24.2655122,25 24.5174212,24.9012346 24.7110455,24.7037037 C25.0963182,24.3185185 25.0963182,23.6962963 24.7110455,23.3111111 L13.896737,12.4962963 L24.7110455,1.69135802 C25.0963182,1.30617284 25.0963182,0.674074074 24.7110455,0.288888889 C24.3247849,-0.0962962963 23.6994577,-0.0962962963 23.314185,0.288888889 L12.4998765,11.1037037 L1.68655596,0.288888889 C1.30029538,-0.0962962963 0.67595602,-0.0962962963 0.289695437,0.288888889 C-0.0965651457,0.674074074 -0.0965651457,1.30617284 0.289695437,1.69135802 L11.103016,12.4962963 L0.289695437,23.3111111 C-0.0965651457,23.6962963 -0.0965651457,24.3185185 0.289695437,24.7037037" id="btn-close" fill="#1A1918" sketch:type="MSShapeGroup"></path>
     </g>
 </svg>
