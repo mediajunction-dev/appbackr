@@ -19,11 +19,11 @@
 			<div class="app-score-icon">
 				<span>8.6</span>
 			</div>
-			<?php include('../assets/templates/favorite-vote-btn-group.php'); ?>
+			<?php include('../assets/templates/favorite-vote-btn-group-active.php'); ?>
 		</div>
 		<!-- Group Actions -->
 		<div class="group-action-float">
-			<a class="btn-simple btn-simple-share anatomy-modal-link" name="share-app">Share</a>
+			<a class="btn-simple btn-simple-share">Share</a>
 		</div>
 	</div><!--/ .group-card-inner -->
 </div><!--/ .group-card -->

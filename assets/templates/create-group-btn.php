@@ -1,4 +1,4 @@
-<a class="create-group-btn anatomy-modal-link" name="create-group" href="#">
+<a class="create-group-btn anatomy-modal-link" name="create-group">
 	<div class="group-card-inner">
 		<div class="circle-icon-group">
 			<div class="circle-add">

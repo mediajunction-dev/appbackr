@@ -13,16 +13,13 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
-<body class="wiki public">
+<body class="wiki logged-in edit">
 	<div class="anatomy-wrapper">
 	<!-- Header -->
-	<?php include('../assets/includes/header.php'); ?>
+	<?php include('../assets/includes/header-loggedin.php'); ?>
 	
 	<!-- Search/Social -->
 	<?php include('../assets/includes/search-share-header.php'); ?>
-	
-	<!-- Sign Up CTA -->
-	<?php include('../assets/includes/fixed-join-cta.php'); ?>
 	
 	<!-- Profile Billboard -->
 	<div class="grid-billboard-container">
@@ -31,77 +28,87 @@
 			<!-- User Info -->
 			<div class="row-fluid col-center-xs">
 				<div class="col-sm-6">
-					<div class="grid-billboard-content-inner">	
-						<div class="group-title">
-							<h1>Group Name Here</h1>								
-						</div>						
+					<div class="grid-billboard-content-inner">						
+						<div class="user-profile user-profile-lg">
+							<img src="../assets/images/user-profile-placeholder.jpg" alt="">
+						</div>
+						<div class="user-profile-content">
+							<div class="vert-content">
+							<div class="vert-content-inner">
+							<h1>Keith Miller</h1>
+							<h6>Member Since <span class="user-date">2/2014</h6>
+							</div>
+							</div>
+						</div>
 					</div>
 				</div>				
 				<div class="col-sm-6">
 					<!-- Stat -->
 					<div class="grid-stat-box">
 						<div class="stat">
-							14
+							240
 							<small>APPS</small>							
 						</div>	
 					</div><!--/ .grid-stat-box -->
 					<!-- Stat -->
 					<div class="grid-stat-box">
 						<div class="stat">
-							8.3
-							<small>AVG. SCORE</small>							
+							12
+							<small>GROUPS</small>							
 						</div>	
 					</div><!--/ .grid-stat-box -->
 					<!-- Stat -->
 					<div class="grid-stat-box">
 						<div class="stat">
-							192
-							<small>SHARES</small>							
+							34
+							<small>VOTES</small>							
+						</div>	
+					</div><!--/ .grid-stat-box -->
+					<!-- Stat -->
+					<div class="grid-stat-box">
+						<div class="stat">
+							111
+							<small>TAGS</small>							
 						</div>	
 					</div><!--/ .grid-stat-box -->
 				</div>
 			</div><!--/ .row-fluid -->
 			<!-- Action Bar -->
-			<div class="row-fluid col-center-xs billboard-action-bar">
-				<div class="col-sm-6">
+			<div class="row-fluid col-left-right billboard-action-bar">
+				<div class="col-xs-6">
 					<a class="btn-simple btn-simple-share" href="#">SHARE</a>					
 				</div>
-				<div class="col-sm-6">
-					<a class="user-profile-link" href="profile-public.php"><span class="user-profile-image"><img src="../assets/images/128.jpg"></span> Janet Burns</a>
+				<div class="col-xs-6">
+					<a class="btn-simple btn-simple-edit" href="#">EDIT PROFILE</a>
 				</div>
 			</div><!--/ .row-fluid -->				
 			</div><!--/ .container -->
 		</div><!--/ .profile-billboard-content -->
-	</div><!--/ .grid-billboard-container -->	
+	</div><!--/ .grid-billboard-container -->
 	<div class="grid-app-wall">
-		<div class="grid-app-wall-inner">			
-			<div class="group-description">
-				<div class="container">
-				<div class="row-fluid">
-				<div class="col-md-8 col-md-offset-2">
-				<p>
-					Group description goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				</div>
-				</div>
-				</div>
-			</div>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			
+		<div class="grid-app-wall-inner">
+			<?php include('../assets/templates/create-group-btn.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
+			<?php include('../assets/templates/group-card-template-edit.php'); ?>
 		</div>
 	</div>
 	<!-- Footer -->
 	<?php include('../assets/includes/footer.php'); ?>
 	</div><!--/ .anatomy-wrapper -->
 	
-	<?php include('../assets/actions/share-app.php'); ?>
+	<?php include('../assets/actions/create-group.php'); ?>
+	<?php include('../assets/actions/edit-group.php'); ?>
+
 	
 <?php include('../assets/includes/scripts.php'); ?>
 <script>

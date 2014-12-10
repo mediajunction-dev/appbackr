@@ -20,8 +20,18 @@
 				</ul>
 				</div>
 				<div class="secondary-nav">
-					<a class="btn btn-primary btn-sign-up" href="/developer/signup">Sign Up</a>
-					<a class="login" href="/site/login">Login</a>					
+					<!-- Profile Nav -->					
+					<div class="dropdown">
+						<a class="username dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+							<span class="user-profile"><img src="../assets/images/user-profile-placeholder.jpg" alt=""></span>
+							KEITHMILLER
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="edit-profile"><a href="#"><?php include("../assets/images/icon-edit-profile.svg"); ?> Edit Profile</a></li>
+							<li class="sign-out"><a href="#"><?php include("../assets/images/icon-sign-out.svg"); ?> Sign Out</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

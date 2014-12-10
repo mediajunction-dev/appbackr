@@ -13,16 +13,13 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
-<body class="wiki public">
+<body class="wiki logged-in">
 	<div class="anatomy-wrapper">
 	<!-- Header -->
-	<?php include('../assets/includes/header.php'); ?>
+	<?php include('../assets/includes/header-loggedin.php'); ?>
 	
 	<!-- Search/Social -->
 	<?php include('../assets/includes/search-share-header.php'); ?>
-	
-	<!-- Sign Up CTA -->
-	<?php include('../assets/includes/fixed-join-cta.php'); ?>
 	
 	<!-- Profile Billboard -->
 	<div class="grid-billboard-container">
@@ -67,14 +64,14 @@
 					<a class="btn-simple btn-simple-share" href="#">SHARE</a>					
 				</div>
 				<div class="col-sm-6">
-					<a class="user-profile-link" href="profile-public.php"><span class="user-profile-image"><img src="../assets/images/128.jpg"></span> Janet Burns</a>
+					<a class="user-profile-link" href="profile-loggedin.php"><span class="user-profile-image"><img src="../assets/images/128.jpg"></span> Janet Burns</a>
 				</div>
 			</div><!--/ .row-fluid -->				
 			</div><!--/ .container -->
 		</div><!--/ .profile-billboard-content -->
 	</div><!--/ .grid-billboard-container -->	
 	<div class="grid-app-wall">
-		<div class="grid-app-wall-inner">			
+		<div class="grid-app-wall-inner">
 			<div class="group-description">
 				<div class="container">
 				<div class="row-fluid">
@@ -86,14 +83,20 @@
 				</div>
 				</div>
 			</div>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-favorited.php'); ?>
+			<?php include('../assets/templates/app-card-template-favorited.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-favorited.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-favorited.php'); ?>
+			<?php include('../assets/templates/app-card-template-favorited.php'); ?>
+			<?php include('../assets/templates/app-card-template-favorited.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
+			<?php include('../assets/templates/app-card-template-active.php'); ?>
 			
 		</div>
 	</div>
@@ -101,8 +104,9 @@
 	<?php include('../assets/includes/footer.php'); ?>
 	</div><!--/ .anatomy-wrapper -->
 	
-	<?php include('../assets/actions/share-app.php'); ?>
-	
+	<!-- Backdrop -->
+	<?php include('../assets/actions/favorite-app.php'); ?>
+
 <?php include('../assets/includes/scripts.php'); ?>
 <script>
 var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];

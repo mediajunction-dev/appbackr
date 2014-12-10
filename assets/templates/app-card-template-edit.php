@@ -1,5 +1,5 @@
 <!-- App Card -->
-<div class="app-card">
+<div class="app-card favorited edit-app">
 	<div class="app-card-inner">		
 		<a href="#">
 		<!-- App Icon -->
@@ -19,11 +19,14 @@
 			<div class="app-score-icon">
 				<span>8.6</span>
 			</div>
-			<?php include('../assets/templates/favorite-vote-btn-group.php'); ?>
+			<?php include('../assets/templates/favorite-vote-btn-group-favorited.php'); ?>
 		</div>
 		<!-- Group Actions -->
+		<div class="card-action">
+			<a class="btn-simple btn-simple-edit anatomy-modal-link" name="edit-app">Edit</a>
+		</div>
 		<div class="group-action-float">
-			<a class="btn-simple btn-simple-share anatomy-modal-link" name="share-app">Share</a>
+			<a class="btn-simple btn-simple-share">Share</a>
 		</div>
 	</div><!--/ .group-card-inner -->
 </div><!--/ .group-card -->

@@ -1,7 +1,7 @@
 <!-- Group Card -->
 <div class="group-card">
 	<div class="group-card-inner">		
-		<a href="group-public.php">
+		<a href="group-loggedin-edit.php">
 		<!-- Group Image 
 		<div class="group-card-image">
 			<div class="app-icon-square"><img src="../assets/images/angry-birds-icon.jpg"></div>
@@ -40,6 +40,9 @@
 		</div>
 		</a>
 		<!-- Group Actions -->
+		<div class="card-action">
+			<a class="btn-simple btn-simple-edit anatomy-modal-link" name="edit-group">Edit</a>
+		</div>
 		<div class="group-action-float">
 			<a class="btn-simple btn-simple-share">Share</a>
 		</div>

@@ -13,16 +13,13 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <script src="../assets/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
-<body class="wiki public">
+<body class="wiki logged-in edit">
 	<div class="anatomy-wrapper">
 	<!-- Header -->
-	<?php include('../assets/includes/header.php'); ?>
+	<?php include('../assets/includes/header-loggedin.php'); ?>
 	
 	<!-- Search/Social -->
-	<?php include('../assets/includes/search-share-header.php'); ?>
-	
-	<!-- Sign Up CTA -->
-	<?php include('../assets/includes/fixed-join-cta.php'); ?>
+	<?php include('../assets/includes/search-share-header.php'); ?>	
 	
 	<!-- Profile Billboard -->
 	<div class="grid-billboard-container">
@@ -65,16 +62,17 @@
 			<div class="row-fluid col-center-xs billboard-action-bar">
 				<div class="col-sm-6">
 					<a class="btn-simple btn-simple-share" href="#">SHARE</a>					
+					<a class="btn-simple btn-simple-edit anatomy-modal-link" name="edit-group">EDIT GROUP</a>
 				</div>
 				<div class="col-sm-6">
-					<a class="user-profile-link" href="profile-public.php"><span class="user-profile-image"><img src="../assets/images/128.jpg"></span> Janet Burns</a>
+					<a class="user-profile-link" href="profile-loggedin-edit.php"><span class="user-profile-image"><img src="../assets/images/user-profile-placeholder.jpg"></span> Keith Miller</a>
 				</div>
 			</div><!--/ .row-fluid -->				
 			</div><!--/ .container -->
 		</div><!--/ .profile-billboard-content -->
-	</div><!--/ .grid-billboard-container -->	
+	</div><!--/ .grid-billboard-container -->
 	<div class="grid-app-wall">
-		<div class="grid-app-wall-inner">			
+		<div class="grid-app-wall-inner">
 			<div class="group-description">
 				<div class="container">
 				<div class="row-fluid">
@@ -86,22 +84,29 @@
 				</div>
 				</div>
 			</div>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
-			<?php include('../assets/templates/app-card-template.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
+			<?php include('../assets/templates/app-card-template-edit.php'); ?>
 			
 		</div>
 	</div>
 	<!-- Footer -->
 	<?php include('../assets/includes/footer.php'); ?>
 	</div><!--/ .anatomy-wrapper -->
-	
-	<?php include('../assets/actions/share-app.php'); ?>
+		
+	<?php include('../assets/actions/edit-app.php'); ?>
+	<?php include('../assets/actions/edit-group.php'); ?>
 	
 <?php include('../assets/includes/scripts.php'); ?>
 <script>

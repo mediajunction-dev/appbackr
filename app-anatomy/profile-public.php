@@ -28,50 +28,47 @@
 	<div class="grid-billboard-container">
 		<div class="profile-billboard-content">
 			<div class="container">
-			<div class="row-fluid">
+			<!-- User Info -->
+			<div class="row-fluid col-center-xs">
 				<div class="col-sm-6">
-					<div class="grid-billboard-content-inner">
-						<div class="vert-content">
-						<div class="vert-content-inner">
-							<div class="user-profile user-profile-lg">
-								<img src="../assets/images/user-profile-placeholder.jpg" alt="">
+					<div class="grid-billboard-content-inner">						
+						<div class="user-profile user-profile-lg">
+							<img src="../assets/images/128.jpg" alt="">
+						</div>
+						<div class="user-profile-content">
+							<div class="vert-content">
+							<div class="vert-content-inner">
+							<h1>Janet Burns</h1>
+							<h6>Member Since <span class="user-date">1/2015</h6>
 							</div>
-							<div class="user-profile-content">
-								<div class="vert-content">
-								<div class="vert-content-inner">
-								<h1>Keith Miller</h1>
-								<h6>Member Since <span class="user-date">2/2014</h6>
-								</div>
-								</div>
 							</div>
-						</div>	
 						</div>
 					</div>
 				</div>				
 				<div class="col-sm-6">
 					<!-- Stat -->
-					<div class="col-xs-6 col-sm-3 grid-stat-box">
+					<div class="grid-stat-box">
 						<div class="stat">
 							240
 							<small>APPS</small>							
 						</div>	
 					</div><!--/ .grid-stat-box -->
 					<!-- Stat -->
-					<div class="col-xs-6 col-sm-3 grid-stat-box">
+					<div class="grid-stat-box">
 						<div class="stat">
 							12
 							<small>GROUPS</small>							
 						</div>	
 					</div><!--/ .grid-stat-box -->
 					<!-- Stat -->
-					<div class="col-xs-6 col-sm-3 grid-stat-box">
+					<div class="grid-stat-box">
 						<div class="stat">
 							34
 							<small>VOTES</small>							
 						</div>	
 					</div><!--/ .grid-stat-box -->
 					<!-- Stat -->
-					<div class="col-xs-6 col-sm-3 grid-stat-box">
+					<div class="grid-stat-box">
 						<div class="stat">
 							111
 							<small>TAGS</small>							
@@ -79,9 +76,18 @@
 					</div><!--/ .grid-stat-box -->
 				</div>
 			</div><!--/ .row-fluid -->
+			<!-- Action Bar -->
+			<div class="row-fluid col-left-right billboard-action-bar">
+				<div class="col-xs-6">
+					<a class="btn-simple btn-simple-share" href="#">SHARE</a>					
+				</div>
+				<div class="col-xs-6">
+					<a class="btn-simple btn-simple-connect" href="#">CONNECT</a>
+				</div>
+			</div><!--/ .row-fluid -->				
 			</div><!--/ .container -->
 		</div><!--/ .profile-billboard-content -->
-	</div><!--/ .grid-billboard-contaienr -->
+	</div><!--/ .grid-billboard-container -->	
 	<div class="grid-app-wall">
 		<div class="grid-app-wall-inner">
 			<?php include('../assets/templates/group-card-template.php'); ?>
@@ -102,15 +108,9 @@
 	<?php include('../assets/includes/footer.php'); ?>
 	</div><!--/ .anatomy-wrapper -->
 	
-	<!-- Backdrop -->
-	<div class="anatomy-modal-backdrop"></div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="../assets/js/plugins.min.js"></script>
-<script src="../assets/js/main.min.js"></script>
-<script src="../assets/js/wiki-ui.js"></script>
-
+	<?php include('../assets/actions/share-app.php'); ?>
+	
+<?php include('../assets/includes/scripts.php'); ?>
 <script>
 var _gaq=[['_setAccount','UA-5106720-3'],['_trackPageview']];
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

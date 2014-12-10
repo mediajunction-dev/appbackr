@@ -1,7 +1,7 @@
 <!-- Group Card -->
 <div class="group-card">
 	<div class="group-card-inner">		
-		<a href="group-public.php">
+		<a href="group-loggedin.php">
 		<!-- Group Image 
 		<div class="group-card-image">
 			<div class="app-icon-square"><img src="../assets/images/angry-birds-icon.jpg"></div>
