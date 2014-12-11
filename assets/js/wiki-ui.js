@@ -25,26 +25,66 @@ $('.app-card').each(function (i) {
 // Search Category Switch
 $(function() {
 	$('.form-select ul a').click(function(){
-		$('.aa-search input').removeClass('current').attr('type', 'hidden');
+		$('.aa-search input').remove();
 	});
     $('#search-tags').click(function(){
 	   $('#current-search').html('Tags');
-	   $('#search-tags-field').addClass('current').attr('type', 'text');
+	   $('.aa-search').html('<input class="current" id="search-tags-field" type="text" name="app_anatomy_tag_search" placeholder="Search tags to find apps">');
     });
     $('#search-appname').click(function(){
 	   $('#current-search').html('Apps');
-	   $('#search-appname-field').addClass('current').attr('type', 'text');
+	   $('.aa-search').html('<input class="current" id="search-appname-field" type="text" name="app_anatomy_appname_search" placeholder="Search for an app">');
     });
     $('#search-appscore').click(function(){
 	   $('#current-search').html('Appscore');
-	   $('#search-appscore-field').addClass('current').attr('type', 'text');
+	   $('.aa-search').html('<input class="current" id="search-appscore-field" type="text" name="app_anatomy_appscore_search" placeholder="Search an appscore to find apps">');
     });
     $('#search-appstore').click(function(){
 	   $('#current-search').html('App Store');
-	   $('#search-appstore-field').addClass('current').attr('type', 'text');
+	   $('.aa-search').html('<input class="current" id="search-appstore-field" type="text" name="app_anatomy_appstore_search" placeholder="Search for an app store">');
     });
-});// Edit Button Toggle
+});
+// Edit Button Toggle
+$('.aa-tags').each(function() {
+	$(this).find('.btn-circle-edit').click(function(){
+		$(this).toggleClass('active');
+		$(this).closest('.aa-tags').find('.aa-tag-list').toggleClass('aa-tag-edit');
+		$(this).closest('.aa-tags').find('.aa-tag-created .aa-tag-link').toggleClass('anatomy-modal-link');
+	});	
+});
+// Detail Header Swaps
+$(window).on('resize load', function() {	
+    if ( $(window).width() < 767) {
+	    $('.app-score-vote-group').insertAfter('.price');
+    }
+	else {
+		$('.col-sm-3.col-md-4').append($('.app-score-vote-group'));
+	}
+});
+// Horizontal Galleries
+$(function() {	
+	$('.aa-screenshots .grid-box-scrollable-inner').scroll(function() {
+		if ($(this).scrollLeft()>0) {
+			$('.more-arrow').css({'right':'-75px'});
+		}
+		else {
+			$('.more-arrow').css({'right':'0'});
+		}
+	});
+	$('.aa-additional-apps .grid-box-scrollable-inner').scroll(function() {
+		if ($(this).scrollLeft()>0) {
+			$('.more-apps-arrow').css({'right':'-75px'});
+		}
+		else {
+			$('.more-apps-arrow').css({'right':'0'});
+		}
+	});
 
+});
+// Expand Image Gallery
+$('.screenshots-viewport').click(function(){
+	$(this).toggleClass('expanded');
+});
 // Anatomy Modal  
 function close_modal(){    
 	$(".anatomy-wrapper").addClass("blur-out").delay(300).queue(function(blurout){	    
@@ -60,17 +100,19 @@ function close_modal(){
 	$(".anatomy-modal-backdrop").addClass("active-out").delay(300).queue(function(activeout2){	    
 	    $(this).removeClass("active-out");
 	    $(this).removeClass("active");
+	    $(this).remove();
 	    activeout2();
 	});
 } 
 function show_modal(modal_id){  
     $('.anatomy-wrapper').addClass('anatomy-modal-wrap');
-    $('.anatomy-modal-backdrop').addClass('active');
+    $('<div class="anatomy-modal-backdrop active"></div>').insertAfter('.anatomy-wrapper');
     $('#'+modal_id).addClass("active-in").delay(100).queue(function(activein1){	    
 	    $(this).addClass('active');
 	    $(this).removeClass('active-in');
 	    activein1();
 	});
+	return false;
 }
 $(document).ready(function(){  
     $('.anatomy-modal-link').click(function(){  
