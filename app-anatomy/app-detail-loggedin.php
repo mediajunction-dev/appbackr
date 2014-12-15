@@ -35,7 +35,7 @@
 								App Developer, Inc.<br>
 								Category &nbsp;/&nbsp; Low Maturity
 							</p>
-							<h5 class="price">FREE</h5>
+							<h5 class="price android">FREE</h5>
 							<!-- Sentiments -->
 							<ul class="aa-tag-list">
 								<li class="aa-tag"><a class="aa-tag-link" href="#">#awesome</a></li>
@@ -44,14 +44,13 @@
 							</ul>
 							<!-- Behaviors -->
 							<ul class="aa-tag-list">
-								<li class="aa-tag"><a class="aa-tag-link" href="#">&collaborative</a></li>
-								<li class="aa-tag"><a class="aa-tag-link" href="#">&sms</a></li>
-								<li class="aa-tag"><a class="aa-tag-link" href="#">&lightweight</a></li>
+								<li class="aa-tag"><a class="aa-tag-link" href="#">+collaborative</a></li>
+								<li class="aa-tag"><a class="aa-tag-link" href="#">+sms</a></li>
+								<li class="aa-tag"><a class="aa-tag-link" href="#">+lightweight</a></li>
 							</ul>
-							<ul class="platform-versions">
-								<li class="android">2.3</li>
-								<li class="ios">2.3</li>
-							</ul>
+							<p class="platform-version">
+								VERSION 2.3
+							</p>
 						</div>
 					</div>
 				</div>				
@@ -110,7 +109,7 @@
 				<div class="grid-box-md">
 					<ul class="aa-tag-list">
 						<li class="aa-tag aa-tag-created">					
-							<a class="aa-tag-link" href="#" name="sentiment-tag-name">#Short</a>
+							<a class="aa-tag-link" href="sentiment-tags.php" title="sentiment-tag-name">#Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
@@ -125,7 +124,7 @@
 							<a class="aa-tag-link" href="#">#LongSentiment</a>
 						</li>
 						<li class="aa-tag aa-tag-created">							
-							<a class="aa-tag-link" href="#" name="sentiment-tag-name">#LongerSentiment</a>
+							<a class="aa-tag-link" href="#" title="sentiment-tag-name">#LongerSentiment</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
@@ -137,7 +136,7 @@
 							<a class="aa-tag-link" href="#">#LongSentiment</a>
 						</li>
 						<li class="aa-tag aa-tag-created">
-							<a class="aa-tag-link" href="#" name="sentiment-tag-name">#Short</a>
+							<a class="aa-tag-link" href="#" title="sentiment-tag-name">#Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
@@ -146,7 +145,7 @@
 							<a class="aa-tag-link" href="#">#LongerSentiment</a>
 						</li>
 						<li class="aa-tag aa-tag-created">							
-							<a class="aa-tag-link" href="#" name="sentiment-tag-name">#Short</a>
+							<a class="aa-tag-link" href="#" title="sentiment-tag-name">#Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
@@ -164,7 +163,7 @@
 							<a class="aa-tag-link" href="#">#Short</a>
 						</li>
 						<li class="aa-tag aa-tag-created">							
-							<a class="aa-tag-link" href="#" name="sentiment-tag-name">#Short</a>
+							<a class="aa-tag-link" href="#" title="sentiment-tag-name">#Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
@@ -184,79 +183,66 @@
 					<h2>Behaviors</h2>
 				</div>
 				<div class="grid-box-md">
-					<ul class="aa-tag-list">						
-						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#Short</a>
-						</li>
-						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#Short</a>
-						</li>
-						<li class="aa-tag">
-							<a class="aa-tag-link" href="#" name="behavior-tag-name">#LongBehavior</a>
-							<div class="aa-tag-actions">
-								<span class="wikiicon-btn-delete"></span>
-							</div>
-						</li>
+					<ul class="aa-tag-list">
 						<li class="aa-tag aa-tag-created">					
-							<a class="aa-tag-link" href="#" name="behavior-tag-name">#Short</a>
+							<a class="aa-tag-link" href="behavior-tags.php" title="behavior-tag-name">+Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
+						</li>
+						<li class="aa-tag">							
+							<a class="aa-tag-link" href="#">+Short</a>
+						</li>
+						<li class="aa-tag">							
+							<a class="aa-tag-link" href="#">+Short</a>
+						</li>
+						<li class="aa-tag">							
+							<a class="aa-tag-link" href="#">+LongBehavior</a>
 						</li>
 						<li class="aa-tag aa-tag-created">							
-							<a class="aa-tag-link" href="#" name="behavior-tag-name">#LongerBehavior</a>
+							<a class="aa-tag-link" href="#" title="behavior-tag-name">+LongerBehavior</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#LongBehavior</a>
+							<a class="aa-tag-link" href="#">+Short</a>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#Short</a>
+							<a class="aa-tag-link" href="#">+LongBehavior</a>
 						</li>
-						
 						<li class="aa-tag aa-tag-created">
-							<a class="aa-tag-link" href="#" name="behavior-tag-name">#Short</a>
+							<a class="aa-tag-link" href="#" title="behavior-tag-name">+Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#LongerBehavior</a>
+							<a class="aa-tag-link" href="#">+LongerBehavior</a>
 						</li>
 						<li class="aa-tag aa-tag-created">							
-							<a class="aa-tag-link" href="#" name="behavior-tag-name">#Short</a>
+							<a class="aa-tag-link" href="#" title="behavior-tag-name">+Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
-						</li>						
-						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#LongerBehavior</a>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#Short</a>
+							<a class="aa-tag-link" href="#">+Short</a>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#LongBehavior</a>
+							<a class="aa-tag-link" href="#">+LongerBehavior</a>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#LongBehavior</a>
+							<a class="aa-tag-link" href="#">+LongBehavior</a>
 						</li>
 						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#LongBehavior</a>
-						</li>
-						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#Short</a>
+							<a class="aa-tag-link" href="#">+Short</a>
 						</li>
 						<li class="aa-tag aa-tag-created">							
-							<a class="aa-tag-link" href="#" name="behavior-tag-name">#Short</a>
+							<a class="aa-tag-link" href="#" title="behavior-tag-name">+Short</a>
 							<div class="aa-tag-actions">
 								<span class="wikiicon-btn-delete"></span>
 							</div>
-						</li>
-						<li class="aa-tag">							
-							<a class="aa-tag-link" href="#">#Short</a>
 						</li>
 					</ul>
 				</div>
@@ -276,24 +262,131 @@
 					<h2>Reviews</h2>
 				</div>
 				<div class="grid-box-lg">
-					
+					<!-- Review -->
+					<div class="aa-app-review">
+						<div class="row-fluid">
+							<div class="col-sm-4 col-sm-offset-4 col-md-offset-0">
+								<img src="../assets/images/wsj.png" alt="Wall Street Journal">
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <a class="read-more" href="#">Read Full Review</a>
+								</p>
+							</div>
+						</div>
+					</div> <!-- .aa-app-review -->
+					<!-- Review -->
+					<div class="aa-app-review">
+						<div class="row-fluid">
+							<div class="col-sm-4 col-sm-offset-4 col-md-offset-0">
+								<img src="../assets/images/nyt.png" alt="New York Times">
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <a class="read-more" href="#">Read Full Review</a>
+								</p>
+							</div>
+						</div>
+					</div> <!-- .aa-app-review -->
+					<!-- Review -->
+					<div class="aa-app-review">
+						<div class="row-fluid">
+							<div class="col-sm-4 col-sm-offset-4 col-md-offset-0">
+								<img src="../assets/images/wired.png" alt="Wired">
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <a class="read-more" href="#">Read Full Review</a>
+								</p>
+							</div>
+						</div>
+					</div> <!-- .aa-app-review -->
 				</div>
 			</div>
-			<div class="col-sm-4 grid-col-last aa-stores">
+			<div class="col-sm-4 aa-stores">
 				<div class="grid-title-bar">
 					<h2>Stores</h2>
 				</div>
 				<div class="grid-box-lg">
-					
+					<ul class="store-list">
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/amazon-logo.png" alt=""></a>
+						</li>
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/tizen-logo.png" alt=""></a>
+						</li>
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/samsung-logo.png" alt=""></a>
+						</li>
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/windows-phone-logo.png" alt=""></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		<!-- Full Width Stores -->
+		<div class="row-fluid grid-row-bottom">
+			<div class="col-sm-12 aa-stores">
+				<div class="grid-title-bar">
+					<h2>Stores</h2>
+				</div>
+				<div class="grid-box-lg">
+					<ul class="store-list">
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/amazon-logo.png" alt=""></a>
+						</li>
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/tizen-logo.png" alt=""></a>
+						</li>
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/samsung-logo.png" alt=""></a>
+						</li>
+						<li>
+						<a href="#" target="_blank"><img src="../assets/images/windows-phone-logo.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--/ Full Width Stores -->
 		<!--/ REVIEWS/MENTIONS/STORES -->
 		<!-- ADDITIONAL INFO TABS -->
 		<div class="row-fluid grid-row-bottom">
 			<div class="col-sm-12 aa-info-tabs">
 				<div class="grid-box-md">
-					
+					<ul class="nav nav-pills nav-justified" id="more-info-tabs">
+						<li class="active"><a href="#aa-app-description" data-toggle="tab">Description</a></li>
+						<li><a href="#aa-app-true-review" data-toggle="tab">True Review</a></li>
+						<li><a href="#aa-app-feature-list" data-toggle="tab">Feature List</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="aa-app-description">
+							<h3>Description</h3>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							</p>
+						</div>
+						<div class="tab-pane" id="aa-app-true-review">
+							<h3>True Review</h3>
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							</p>
+						</div>
+						<div class="tab-pane" id="aa-app-feature-list">
+							<h3>Feature List</h3>
+							<ul class="feature-list">
+								<li>Feature</li>
+								<li>Longer feature goes here</li>
+								<li>Feature here</li>
+								<li>Feature</li>
+								<li>Longer feature goes here</li>
+								<li>Feature</li>
+								<li>Feature</li>
+								<li>Feature here</li>								
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

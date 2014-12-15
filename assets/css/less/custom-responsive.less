@@ -1,0 +1,296 @@
+// Responsive: Large desktop and up
+@media (min-width: 1200px) {
+	body {font-size:16px;}
+	.container {width:1022px !important;}
+	.site-header .container {width:1022px !important;}
+	#main .container {width:1022px !important; padding-left:0 !important; padding-right:0 !important;}
+	
+	#learn {
+		padding-top:3em;
+		& > .container {width:770px !important; padding-left:100px !important; padding-right:100px !important;}
+	}	
+	.appscore-feature {
+		
+	}
+	ul.steps-full {	
+		li {width:32.5%;}
+	}
+	.app-detail-columns,
+	.offer-accept-details {
+		.app-details,
+		.column-border {
+			border-left:1px solid #ccc;
+			.column-inner,
+			.app-details-inner {padding:0 30px 30px;}
+		}
+		.app-files .app-files-inner {padding:0 0 0 20px;}
+	}
+	.account {
+		.module-nav {width:15em !important;}
+	}
+}
+@media(max-width:1021px) {
+	.container {width:auto !important; padding-left:20px !important; padding-right:20px !important;}
+}
+
+// Responsive: Tablet to desktop
+@media (min-width: 768px) and (max-width: 979px) {
+	body {font-size:15px !important;}
+	//.site-header .nav {display:none; visibility:hidden;}
+	//.menu-trigger { display:block; visibility:visible;}
+	// Typography
+	h1, h2, h3, h4 {br {position:absolute !important; display:none !important;}}
+	
+	.module-title {
+		a {
+			cursor:pointer;
+		}
+	}
+	ul.steps-full {	
+		li {width:32.5%;}
+	}
+	.offer-accept-details {
+		.app-details {			
+			.app-details-inner {padding:0 30px 30px;}
+		}
+		.app-files .app-files-inner {padding:0 0 0 20px;}
+	}
+	.account {
+		.module-nav {
+			font-size:12px;
+			a {font-size:13px;}
+			[class^="ico-"], [class*=" ico-"], [class^="sidr-class-ico-"], [class*=" ico-"] {margin-top:0;}
+		}
+		
+	}
+	
+}
+@media (min-width:767px) {
+	.featured-image-right {text-align:right;}
+	.featured-image-left {text-align:left;}
+	
+	// Section Utilities	
+	.padded-content-right {padding-right:10%;}
+	.padded-content-left {padding-left:10%;}
+	
+	.section-lighter-gray,
+	.section-light-gray {}
+	
+	ul.steps {
+		li {
+			position:relative;
+			span.step-label {display:block; top:28px;}
+		}
+		li:first-child {
+			span.step-label {text-align:left !important;}
+		}
+		li:last-child {
+			span.step-label {text-align:right !important; left:auto !important; right:0;}
+		}
+		
+	}
+	
+	ul.steps-full {		
+		li {width:31.5%;}
+	}
+	
+	.module-title {
+		p.links,
+		p.date {float:right; text-align:right; padding-top:2px;}
+	}
+	.module-content-columns {
+		padding-top:0; padding-bottom:0;
+		[class^="span"],
+		[class*=" span"] {
+			border-right:1px solid #ddd; border-bottom:none;
+			&:last-child {border-right:none; text-align:right;}
+			[class^="span"],
+			[class*=" span"] {
+				border-right:none;
+				&:last-child {text-align:left;}
+			}
+		}
+		.span6 {width:50% !important; margin:0 !important;}
+		h6 {margin-bottom:0;}
+	}
+	.module-form {
+		#counter {float:right;}
+		.search-lg {width:70% !important; margin:0 auto !important; display:block !important;}
+	}
+	.module-actions {		
+		.btn {margin-left:10px;}
+	}
+	// Custom Modules
+	.app-offers {		
+		
+	}
+	.module-numbers {
+		.span3 {width:25% !important; margin:0 !important;}
+	}
+	.offer-accept {
+		padding:0 5%; 
+		.btn-back {float:left;}
+		.module-form {
+			.file-input-wrapper {
+				display:inline-block; padding-left:241px;
+				.file-name {position:absolute; top:0; left:0; width:230px; height:100%; border-right:1px solid #ddd; background-color:@white;}				
+			}
+			.file-input-name {
+				width:230px; white-space:nowrap; overflow:hidden; position:relative; top:-40px; z-index:3; text-indent:8px;	
+			}
+			
+			.short-file-input {
+				.file-input-wrapper {
+					padding-left:161px;
+					.file-name {width:150px;}
+				}
+				.file-input-name {width:150px;}
+			}
+		}
+		.module-actions {
+			padding:20px 5%;
+		}
+	}
+	.claim-app-button {
+		.clearfix();
+		.missing-app {float:left; margin-right:15px;}
+		.plus {float:right; margin-top:12px; margin-right:5px;}
+	}
+	// Account Pages
+	
+	.account {
+		#main {position:relative;}
+		.portal-nav {		
+		}
+		.module-nav {
+			width:14em !important; display:block; visibility:visible; position:absolute;
+			// Affix Plugin			
+			&.affix-top {}			
+			&.affix {position:fixed; top:120px;}
+			&.affix-bottom {}
+		}
+		
+	}
+	#claim-search-results .claim-app-link {}
+	.portal-main {float:right !important;}
+	
+}
+// Responsive: Landscape phone to desktop/tablet
+@media (max-width: 767px) {
+	body {font-size:14px !important;}
+	.site-header .nav {display:none; visibility:hidden;}
+	.menu-trigger,
+	.menu-trigger-2 { display:block; visibility:visible;}
+	.sidr-inner:last-child {display:block; visibility:visible;}
+	// Typography
+	h1.logo-headline {
+		img {width:100px;}
+	}	
+	h1, h2, h3, h4 {br {position:absolute !important; display:none !important;}}
+	// Header
+	//.brand {margin-left: 30px !important;}
+	.secondary-nav {right: 70px !important;}
+	// Billboard
+	.billboard-container {height:auto !important;}
+	.billboard {		
+		.app-circle {height:200px !important; background-size:auto 100% !important;}
+		.billboard-content {
+			h1 {font-size:2.3em !important;}
+		}
+	}
+	#main {
+		.main-content {
+			padding:0;
+		}
+	}
+	#learn {
+		text-align: center !important; padding-top:2em;
+		.row-fluid {position: relative;
+			.span5 {position: absolute; text-align: center; top: 0; width: 100%;}
+		}
+		.learn-detail {position:relative; display:block; height:auto;}
+		.learn-detail-wrapper {padding: 190px 0 0 !important; height:auto;}
+		img {width:170px;}
+	}
+	#more {
+		padding-top:4em;
+		h1,h2,h3,h4,h5,h6,p {padding:0 5% !important;}
+		.span6 {
+			h1,h2,h3,h4,h5,h6,p {padding:0 !important;}
+		}
+	}
+	.feature-nested-image {
+		.alignCenter {text-align:left;}
+		.span3,
+		.span9 {float:none; margin:0;}
+		a small {display:block;}
+	}
+	
+	// General Site Elements
+	.alignRight,
+	.alignLeft {float: none !important;}
+	.featured-image-right,
+	.featured-image-left {text-align:center;}
+	// Subfooter
+	#featured {
+		h2 {font-size:2.3em;}
+		img {height:75px; margin: 0 !important;}
+	}
+	.appscore-feature {
+		.app-info {}
+		.score {margin-right:0;}
+	}
+	.billboard {
+		background: none !important;
+		.mainText {
+			span {display:inline !important;}
+			img {display:none !important;}
+		}	
+		img {margin-bottom: 3em;}
+	}
+
+	// Unique Pages
+	.home {
+		.billboard-inner {position:relative !important; display:block !important;}
+		.billboard,
+		.billboard .app-circle {margin-top:@billboardPad;}
+	}
+	.landing-page {		
+		.billboard-container {height:auto !important;}
+		
+	}
+	.account {
+		.site-header {
+			.secondary-nav,
+			.portal-nav {display:none !important; visibility:hidden;}
+		}
+		#claim-search-results {
+			
+			.claim-app-link {text-align:left;}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	//Header
+	.site-header {
+		.secondary-nav,
+		.portal-nav {
+			display:none !important; visibility:hidden;
+		}
+	}
+	
+	
+	ul.steps-full {	
+		li {width:30%;}
+	}
+	
+	// Unique Pages
+	.home {	
+		.billboard,
+		.billboard .app-circle {margin-top:@billboardPad;}
+	}
+	.landing-page {
+		.site-header-alt {height:60px;}
+	}
+}
