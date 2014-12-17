@@ -4,3 +4,4 @@
 <script src="../assets/js/plugins.min.js"></script>
 <script src="../assets/js/main.min.js"></script>
 <script src="../assets/js/wiki-ui.min.js"></script>
+<script src="../assets/js/bootstrap-tagsinput.min.js"></script>

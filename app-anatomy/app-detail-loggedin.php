@@ -265,10 +265,10 @@
 					<!-- Review -->
 					<div class="aa-app-review">
 						<div class="row-fluid">
-							<div class="col-sm-4 col-sm-offset-4 col-md-offset-0">
+							<div class="col-sm-4 col-xs-offset-4 col-sm-offset-0">
 								<img src="../assets/images/wsj.png" alt="Wall Street Journal">
 							</div>
-							<div class="col-sm-12 col-md-8">
+							<div class="col-xs-12 col-sm-8">
 								<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <a class="read-more" href="#">Read Full Review</a>
 								</p>
@@ -278,10 +278,10 @@
 					<!-- Review -->
 					<div class="aa-app-review">
 						<div class="row-fluid">
-							<div class="col-sm-4 col-sm-offset-4 col-md-offset-0">
+							<div class="col-sm-4 col-xs-offset-4 col-sm-offset-0">
 								<img src="../assets/images/nyt.png" alt="New York Times">
 							</div>
-							<div class="col-sm-12 col-md-8">
+							<div class="col-xs-12 col-sm-8">
 								<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <a class="read-more" href="#">Read Full Review</a>
 								</p>
@@ -291,10 +291,10 @@
 					<!-- Review -->
 					<div class="aa-app-review">
 						<div class="row-fluid">
-							<div class="col-sm-4 col-sm-offset-4 col-md-offset-0">
+							<div class="col-sm-4 col-xs-offset-4 col-sm-offset-0">
 								<img src="../assets/images/wired.png" alt="Wired">
 							</div>
-							<div class="col-sm-12 col-md-8">
+							<div class="col-xs-12 col-sm-8">
 								<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <a class="read-more" href="#">Read Full Review</a>
 								</p>
