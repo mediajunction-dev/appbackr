@@ -322,12 +322,16 @@ ul.social-list {
 }
 .social {
 	text-align:center; margin:0 0 25px; list-style:none; padding:0;
-	a {display:inline-block; width:25px; height:25px; cursor:pointer; margin:0 5px; background-repeat:no-repeat; background-position:0 0;}
-	.facebook {background-image:url(../images/icon-facebook.png);}
-	.twitter {background-image:url(../images/icon-twitter.png);}
-	.googleplus {background-image:url(../images/icon-googleplus.png);}
-	.linkedin {background-image:url(../images/icon-linkedin.png);}
-	.youtube {background-image:url(../images/icon-youtube.png);}
+	a {
+		display:inline-block; width:25px; height:25px; cursor:pointer; margin:0 5px; background-repeat:no-repeat; background-position:center; opacity:.5;
+		.transition(.3s);
+	}
+	a:hover {opacity:1;}
+	.facebook {width:11px; background-image:url(../images/social-facebook.svg);}
+	.twitter {width:24px; background-image:url(../images/social-twitter.svg);}
+	.googleplus {width:21px; background-image:url(../images/social-googleplus.svg);}
+	.linkedin {width:23px; background-image:url(../images/social-linkedin.svg);}
+	.youtube {width:22px; background-image:url(../images/social-youtube.svg);}
 }
 
 // Blockquotes
@@ -1524,118 +1528,7 @@ td.red {color:@red;}
 		}
 	}
 }
-.xchange {
-	// Main Page
-	.billboard {
-		background:#fff url(../images/appscore-apps-background.jpg) repeat-x center 30em;	
-		&, .billboard-inner {height:@billboard-mobile-height;}
-		.billboard-inner {background:url(../images/xchange-scores.png) no-repeat center bottom;}
-		.container {margin-top:8em; }
-		h1 {font-size:3em; margin-bottom:.5em; color:@grayDark;}
-	}
-	.section-background-image {
-		&, .vert-content {height:@billboard-mobile-height;}		
-		.vert-content {padding:2em 0;}
-		font-size:13px;
-		small {margin:0 auto; display:block; text-transform:uppercase; font-weight:700; color:@orange; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid @grayLight;}
-		h2, h3, h4, h5, h6, p {text-align:center;}
-		hr {margin:25px auto 20px; border-bottom-color:@grayLight; border-top:none; }
-		h2 {line-height:1.1;}
-		h3 {font-size:1.25em;}
-		p {font-size:1em; padding:0 10%; color:#ccc; font-weight: 300;}
-	}
-	.section-what-is-xchange {
-		background-image:url(../images/fullscreen-phone-group.jpg);		
-		.plus {width:100%; margin:20px 0; display:inline-block; text-align:center; font-weight:700; color:#fff; font-size:4em;}		
-	}
-	.xchange-appscore-reach {
-		font-size:12px;
-		background:#fff url(../images/appscore-apps-background.jpg) no-repeat center top;
-		.appscore-arrows {width:100%;}
-	}
-	.section-what-is-appscore {
-		background-image:url(../images/fullscreen-device-closeup.jpg);
-		h3 {color:@white;}
-	}
-	.industry-logos {
-		text-align:center; padding:2em 0;
-		img {display:inline-block; padding:0 2em !important;}
-	}
-	
-	@media(min-width:@screen-sm-min) {	
-		.billboard {
-			&, .billboard-inner {height:@xchange-billboard-height;}
-			//.vert-content {height:@xchange-billboard-height;}
-		}	
-		.section-background-image {
-			font-size:18px;
-			&, .vert-content {height:@result-billboard-height;}
-			.vert-content {padding:0;}
-		}
-		.xchange-appscore-reach {
-			font-size:16px;
-		}
-		.section-what-is-xchange {
-			.plus {margin:90% 0 0;}
-		}
-	}
-	
-	// Results Page
-	.score-result {		
-		&, .vert-content {height:auto !important;}
-		.container {margin-top:120px !important;}
-		h2 {font-size:2.5em; margin-bottom:.5em;}
-	}
-	.appscore-feature {
-		width:auto; margin:0 auto;
 
-		.app-detail {
-			 margin-top:1em; padding:1em; border:2px solid #ddd; border-radius:6px; background-color:#fff; .clearfix();
-		}		
-		.app-name,
-		.app-icon {
-			float:left;
-		}
-		
-		.app-icon {margin-right:20px;}
-		.app-name {width:60%;}
-		
-		h2.app-name {
-			display:inline-block; font-size:1.5em !important; color:@orange; font-weight:400;
-			text-align:left; margin-top:-5px !important;
-			span {display:block; font-size:75%; color:@grayDarker; margin:8px 0;}
-			small {
-				display:block; font-size:55%; letter-spacing:.08em; color:@gray;
-				text-transform:uppercase; font-weight:600;
-			}
-		}
-		.app-icon-lg {
-			font-size:30px;
-		}
-		.app-score-lg {
-			padding:1em; text-align:center;
-			.app-icon-lg {font-size:45px;}
-		}
-		.score-info {text-align:center;}
-	}
-	@media(min-width:@screen-md-min) {
-		.score-result {
-			&, .vert-content {height:@result-billboard-height !important;}
-			.container {margin-top:100px !important;}
-		}
-		.appscore-feature {
-			width:75%; margin:0 auto;
-			.app-icon-lg {font-size:50px;}
-			.app-score-lg {
-				 text-align:left;
-				.app-icon-lg {font-size:63px;}
-			}
-		}
-		
-	}
-	
-	
-}
 @mozilla-billboard-height:45em;
 .mozilla, .samsung {
 	.billboard {
